@@ -1,0 +1,38 @@
+/* styles/banner-section.css */
+
+.banner-image {
+    /* background-image: url('https://via.placeholder.com/1920x1080/?coffee,coffee-beans,coffee-farmers');
+    background-size: cover;
+    background-position: center; */
+    /* background-image: url('https://via.placeholder.com/1920x1080/?campos de cafe,cultivos de cafe'); */
+    background-image: url('/img/inicio/banner-principal.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-color: #757c7d; */
+}
+
+
+/* styles.css */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f7fafc; /* bg-gray-100 */
+    padding: 2.5rem 0; /* py-10 */
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex-shrink: 0;
+    padding: 0.5rem; /* p-2 */
+  }
+  
+  .carousel-item img {
+    object-fit: contain;
+    border-radius: 0.375rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  }
+  
