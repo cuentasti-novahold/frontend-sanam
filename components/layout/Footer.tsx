@@ -42,7 +42,7 @@ export default function Footer() {
                 <div className="my-5">
                     <h2 className='font-bold text-2xl'>Blog</h2>
                     <ul className="justify-center">
-                        <li className=''><Link href="#">Contacto</Link></li>
+                        <li className=''><Link href="/contacto">Contacto</Link></li>
                     </ul>
                 </div>
             </div>

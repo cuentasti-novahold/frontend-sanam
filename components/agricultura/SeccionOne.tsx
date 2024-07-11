@@ -1,10 +1,36 @@
 import Image from 'next/image'
 import React from 'react'
+import CircleImage from './seccion-one/CircleImage'
+import { ICircleImage } from '@/types/CircleImage'
+
+
+const circlesImages: ICircleImage[] = [
+  {
+    imageUrl: 'https://via.placeholder.com/250x250',
+    description: '39% Carbono Orgánico',
+  },
+  {
+    imageUrl: 'https://via.placeholder.com/250x250',
+    description: '41% Carbohidratos',
+  },
+  {
+    imageUrl: 'https://via.placeholder.com/250x250',
+    description: 'Engranaje natural de Aminoácidos',
+  },
+  {
+    imageUrl: 'https://via.placeholder.com/250x250',
+    description: 'Ácidos Antioxidantes',
+  },
+];
+
 
 export default function SeccionOne() {
+
+
+
   return (
     <>
-    <div className='w-full grid'>
+      <div className='w-full grid'>
         <div className="w-full lg:flex lg:px-20">
           <div className="lg:w-1/2 bg-[#7ea977] justify-center items-center p-10 rounded-2xl m-10">
             <h1 className="text-2xl lg:text-4xl text-white py-2 lg:p-10">
@@ -34,22 +60,13 @@ export default function SeccionOne() {
         </div>
 
         <div className="w-full lg:flex justify-center items-center bg-slate-400 rounded-3xl px-20">
-          <div className="lg:w-1/4 p-5 flex flex-col items-center">
-            <Image width={250} height={250} src={'https://via.placeholder.com/250x250/?icono,planta'} alt='imagen semilla' className='object-contain rounded-full' />
-            <p className="font-bold ">39% Carbono Orgánico</p>
-          </div>
-          <div className="lg:w-1/4 p-5 flex flex-col items-center">
-            <Image width={250} height={250} src={'https://via.placeholder.com/250x250/?icono,eco'} alt='imagen semilla' className='object-contain rounded-full' />
-            <p className="font-bold ">41% Carbohidratos</p>
-          </div>
-          <div className="lg:w-1/4 p-5 flex flex-col items-center">
-            <Image width={250} height={250} src={'https://via.placeholder.com/250x250/?icono,react'} alt='imagen semilla' className='object-contain rounded-full' />
-            <p className="font-bold ">Engranaje natural de Aminoácidos</p>
-          </div>
-          <div className="lg:w-1/4 p-5 flex flex-col items-center">
-            <Image width={250} height={250} src={'https://via.placeholder.com/250x250/?icono,siembra'} alt='imagen semilla' className='object-contain rounded-full' />
-            <p className="font-bold ">Ácidos Antioxidantes</p>
-          </div>
+
+          {
+            circlesImages.map((cir, index) => (
+              <CircleImage key={index} imageUrl={cir.imageUrl} description={cir.description} />
+            ))
+          }
+
         </div>
 
       </div>

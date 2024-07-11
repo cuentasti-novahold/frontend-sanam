@@ -6,7 +6,6 @@ import ConcentradoBanner from '@/components/nutricion/ConcentradoBanner'
 import ProductosBanner from '@/components/nutricion/ProductosBanner'
 import ProductosNaox from '@/components/nutricion/ProductosNaox'
 import SaludHumana from '@/components/nutricion/SaludHumana'
-import { ReactNode } from 'react';
 import { ISlideContent } from '@/types/SlideContent'
 import { GiOfficeChair, GiHouseKeys } from 'react-icons/gi'
 import { IoMdSchool } from 'react-icons/io'

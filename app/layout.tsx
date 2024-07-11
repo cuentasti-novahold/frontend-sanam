@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import { FaChevronUp } from 'react-icons/fa';
+import { BiLogoWhatsapp } from "react-icons/bi";
 import '../src/utils/animate-scroll'
 // Importa tus estilos globales aquí
 import "./globals.css";
@@ -14,7 +15,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Web Sanam",
   description: "Realizado por Bik Leek",
-  keywords: "Café. mucilago de café"
+  keywords: "Café, Mucilago de café",
+  applicationName: "Sanam.com",
+  robots: { index: true, follow: true, },
+  creator: "Bik Leek Team",
+  category: "Alimentación",
+  // authors: [{ name: "Novahold", url: "novahold.com" },],
+  // alternates: {
+  //   canonical: "/",
+  //   languages: {
+  //     'en-US': '/en-US',
+  //     'es-ES': '/es-co',
+  //   },
+  // }
 };
 
 export default function RootLayout({
@@ -33,7 +46,16 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
-        <Link href="#" className="scroll-top flex"><FaChevronUp /></Link>
+        {/* <Link href="https://wa.me/c/573142562821" className="scroll-top flex "><BiLogoWhatsapp /></Link>
+        <Link href="#" className="scroll-top flex"><FaChevronUp /></Link> */}
+        <div className="fixed bottom-8 right-10 flex flex-col items-end space-y-4">
+          <Link href="https://wa.me/573142562821" className="flex items-center justify-center h-12 w-12 rounded-full bg-green-500 text-white hover:bg-green-600 transform hover:scale-110 transition duration-150 ease-in-out">
+            <BiLogoWhatsapp size="26" />
+          </Link>
+          <Link href="#" className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-500 text-white hover:bg-gray-600 transform hover:scale-110 transition duration-150 ease-in-out">
+            <FaChevronUp size="26" />
+          </Link>
+        </div>
       </body>
     </html>
   );

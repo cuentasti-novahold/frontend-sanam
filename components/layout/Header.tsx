@@ -10,21 +10,11 @@ import { FaX } from 'react-icons/fa6';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Control del menú principal
-  // const [isSubMenuOpen1, setIsSubMenuOpen1] = useState(false); // Control del primer submenú
-  // const [isSubMenuOpen2, setIsSubMenuOpen2] = useState(false); // Control del segundo submenú
   const [activeLink, setActiveLink] = useState('');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  // const toggleSubMenu1 = () => {
-  //   setIsSubMenuOpen1(!isSubMenuOpen1); // Alterna el primer submenú
-  // };
-
-  // const toggleSubMenu2 = () => {
-  //   setIsSubMenuOpen2(!isSubMenuOpen2); // Alterna el segundo submenú
-  // };
 
   const handleClick = (event: any) => {
     setActiveLink(event.target.textContent); // Identifica el enlace activo
@@ -41,12 +31,8 @@ export default function Navbar() {
         {/* Menú principal */}
         <div className="hidden md:flex space-x-8 ">
           <NavbarCustom
-            // toggleSubMenu1={toggleSubMenu1} // Alternador del primer submenú
-            // isSubMenuOpen1={isSubMenuOpen1} // Estado del primer submenú
-            // toggleSubMenu2={toggleSubMenu2} // Alternador del segundo submenú
-            // isSubMenuOpen2={isSubMenuOpen2} // Estado del segundo submenú
-            // handleClick={handleClick}
             activeLink={activeLink}
+            handleClick={handleClick}
           />
         </div>
 
@@ -81,11 +67,7 @@ export default function Navbar() {
           </div>
 
           <NavbarCustom
-            // toggleSubMenu1={toggleSubMenu1}
-            // isSubMenuOpen1={isSubMenuOpen1}
-            // toggleSubMenu2={toggleSubMenu2}
-            // isSubMenuOpen2={isSubMenuOpen2}
-            // handleClick={handleClick}
+            handleClick={handleClick}
             activeLink={activeLink}
           />
 

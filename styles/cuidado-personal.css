@@ -1,0 +1,23 @@
+/* Section Three */
+.body-carrusel {
+    position: relative;
+    margin: 0;
+    padding: 15px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+
+.swiper-slide {
+    color: aliceblue;
+    background-color: rgba(44, 25, 9, 0.87);
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 200px;
+}
+
+/* Section Six */
