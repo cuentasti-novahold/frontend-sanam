@@ -1,6 +1,7 @@
 "use client";
+import { Chart } from "chart.js";
 import { useEffect, useRef } from "react";
-import Chart from "chart.js";
+
 
 export default function SectionFour() {
   const graph_one = useRef(null);
@@ -9,7 +10,7 @@ export default function SectionFour() {
 
   /* Graph one */
   useEffect(() => {
-    let config = {
+    const config = {
       type: "bar",
       data: {
         labels: ["30 minutes", "1 hour", "90 minutes"],
@@ -45,15 +46,15 @@ export default function SectionFour() {
           enabled: false,
         },
         hover: {
-          mode: "nearest",
+          mode: "nearest" as const,
           intersect: false,
         },
         legend: {
           labels: {
             fontColor: "rgba(0, 0, 0, 0.733)",
           },
-          align: "center",
-          position: "bottom",
+          align: "center" as const,
+          position: "bottom" as const,
         },
         scales: {
           yAxes: [
@@ -119,15 +120,15 @@ export default function SectionFour() {
           enabled: false,
         },
         hover: {
-          mode: "nearest",
+          mode: "nearest" as "nearest",
           intersect: false,
         },
         legend: {
           labels: {
             fontColor: "rgba(0, 0, 0, 0.733)",
           },
-          align: "center",
-          position: "bottom",
+          align: "center" as "center",
+          position: "bottom" as "bottom",
         },
         scales: {
           yAxes: [
@@ -162,7 +163,7 @@ export default function SectionFour() {
 
   /* Graph three */
   useEffect(() => {
-    let config = {
+    const config = {
       type: "bar",
       data: {
         datasets: [
@@ -197,15 +198,15 @@ export default function SectionFour() {
           enabled: false,
         },
         hover: {
-          mode: "nearest",
+          mode: "nearest" as "nearest",
           intersect: false,
         },
         legend: {
           labels: {
             fontColor: "rgba(0, 0, 0, 0.733)",
           },
-          align: "center",
-          position: "bottom",
+          align: "center" as "center",
+          position: "bottom" as "bottom",
         },
         scales: {
           yAxes: [
