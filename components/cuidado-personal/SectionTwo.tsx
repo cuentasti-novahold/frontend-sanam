@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function SectionTwo() {
+    const t = useTranslations();
     return (
         <>
             <div className="max-w-4xl mx-auto p-5 lg:m-auto">
@@ -16,10 +18,9 @@ export default function SectionTwo() {
                     </div>
 
                     <div className="p-4 rounded-xl shadow-md z-0 max-w-full ml-auto md:ml-8 md:p-2 md:max-w-md md:transform md:-translate-x-[-10rem] lg:p-6 lg:-translate-x-[-14rem] lg:ml-[calc(500px+2rem)] lg:max-w-[calc(800px+2rem)] bg-white">
-                        <p className="text-2xl p-10 text-justify">Nuestro proceso patentado y limpio garantiza que se mantenga el
-                            100% de la integridad biológica: no se agrega ni se quita nada a
-                            la fruta. El resultado final, nuestro concentrado Naox® Derma sin
-                            GMO y triple antioxidante.</p>
+                        <p className="text-2xl p-10 text-justify">
+                            {t('cp-process-naox')}
+                        </p>
                     </div>
                 </div>
             </div>

@@ -1,24 +1,50 @@
-"use client"
-import Link from 'next/link';
+"use client";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 interface navbarCustomProps {
-  activeLink: string,
-  handleClick: (ev: React.MouseEvent<HTMLButtonElement>) => void
+  activeLink: string;
+  handleClick: (ev: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export default function NavbarCustom({ activeLink, handleClick }: navbarCustomProps) {
+export default function NavbarCustom({
+  activeLink,
+  handleClick,
+}: navbarCustomProps) {
+  const t = useTranslations();
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1]; // Extrae el idioma de la ruta
+
   return (
     <>
-      <Link href="/agricultura" onClick={(e)=>handleClick} className={`text-gray-500 hover:text-green-400 uppercase ${activeLink === 'agricultura' ? 'text-green-400' : ''}`}>
-        AGRICULTURA
+      <Link
+        /*    href="/agricultura" */
+        href={`/${locale}/agricultura`}
+        onClick={(e) => handleClick}
+        className={`text-gray-500 hover:text-green-400 uppercase ${
+          activeLink === "agricultura" ? "text-green-400" : ""
+        }`}
+      >
+        {t("agriculture")}
       </Link>
 
-      <Link href="/nutricion" className={`text-gray-500 hover:text-green-400 uppercase ${activeLink === 'nutricion' ? 'text-green-400' : ''}`}>
-        Nutricion y Salud Humana
+      <Link
+        href={`/${locale}/nutricion`}
+        className={`text-gray-500 hover:text-green-400 uppercase ${
+          activeLink === "nutricion" ? "text-green-400" : ""
+        }`}
+      >
+        {t("nutrition")} {t("and")} {t("human-health")}
       </Link>
 
-      <Link href="/cuidado-personal" className={`text-gray-500 hover:text-green-400 uppercase ${activeLink === 'cuidado-personal' ? 'text-green-400' : ''}`}>
-        CUIDADO PERSONAL
+      <Link
+        href={`/${locale}/cuidado-personal`}
+        className={`text-gray-500 hover:text-green-400 uppercase ${
+          activeLink === "cuidado-personal" ? "text-green-400" : ""
+        }`}
+      >
+        {t("care")}
       </Link>
     </>
   );

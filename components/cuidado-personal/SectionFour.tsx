@@ -1,9 +1,10 @@
 "use client";
 import { Chart } from "chart.js";
 import { useEffect, useRef } from "react";
-
+import { useTranslations } from "next-intl";
 
 export default function SectionFour() {
+  const t = useTranslations();
   const graph_one = useRef(null);
   const graph_two = useRef(null);
   const graph_three = useRef(null);
@@ -244,12 +245,9 @@ export default function SectionFour() {
             <div className="flex flex-wrap">
               <div className="flex-grow flex-1 relative w-full max-w-full">
                 <h6 className="text-center mb-2 text-xl font-semibold">
-                  PRUEBAS DE PROTECCIÓN DE LUZ AZUL
+                  {t("cp-test-light-blue")}
                 </h6>
-                <h2 className="text-lg">
-                  Reducción medida del daño inducido por la luz azul en
-                  comparación con los daños no tratados*
-                </h2>
+                <h2 className="text-lg">{t("cp-reduction")}</h2>
               </div>
             </div>
           </div>
@@ -262,7 +260,8 @@ export default function SectionFour() {
 
           <div className="flex items-center justify-center p-1 m-3 rounded-3xl bg-amber-900">
             <p className="text-center text-white font-bold">
-              +89% vs Retinol <br /> +58% vs CoQ10
+              {t("+89")} {t("vs")} {t("retinol")} <br />
+              {t("+58")} {t("vs")} {t("coq")}
             </p>
           </div>
         </div>
@@ -272,12 +271,11 @@ export default function SectionFour() {
           <div className="flex rounded-t m-1 px-6 py-3 bg-transparent">
             <div className="flex flex-wrap">
               <div className="flex-grow flex-1 relative w-full max-w-full">
-                <h2 className="text-center mb-2 text-xl font-semibold">
-                  PRUEBAS DE PROTECCIÓN URBANAS CONTRA EL POLVO
+                <h2 className="text-center mb-2 text-xl font-semibold uppercase">
+                  {t("cp-urban-protection")}
                 </h2>
                 <h2 className="text-lg text-justify">
-                  Reducción medida de los daños inducidos por la contaminación
-                  por polvo urbano en comparación con los daños no tratados*
+                  {t("cp-reduction-urban")}
                 </h2>
               </div>
             </div>
@@ -291,7 +289,9 @@ export default function SectionFour() {
 
           <div className="flex items-center justify-center p-1 m-3 rounded-3xl bg-amber-900">
             <p className="text-center text-white font-bold">
-              +246% vs Retinol <br /> +162% vs CoQ10
+              {/* +246% vs Retinol <br /> +162% vs CoQ10 */}
+              {t("+246")} {t("vs")} {t("retinol")} <br />
+              {t("+162")} {t("vs")} {t("coq")}
             </p>
           </div>
         </div>
@@ -301,8 +301,8 @@ export default function SectionFour() {
           <div className="flex rounded-t m-1 px-6 py-[3.4rem] bg-transparent">
             <div className="flex flex-wrap">
               <div className="flex-grow flex-1 relative w-full max-w-full">
-                <h2 className="text-center mb-2 text-xl font-semibold">
-                  PRUEBAS DE VIABILIDAD CELULAR POST-UVB*
+                <h2 className="text-center mb-2 text-xl font-semibold uppercase">
+                  {t("cp-post-uvb")}
                 </h2>
               </div>
             </div>
@@ -323,3 +323,4 @@ export default function SectionFour() {
     </>
   );
 }
+/* "retinol-coq10": "+89% vs Retinol <br/> +58% vs CoQ10", */

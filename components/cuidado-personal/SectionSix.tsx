@@ -1,12 +1,14 @@
 import "@/styles/cuidado-personal.css";
+import { useTranslations } from "next-intl";
 
 export default function SectionSix() {
+  const t = useTranslations();
   return (
     <div className="flex flex-col">
       <div className="flex items-center justify-center px-8 gap-4 w-full">
         <div className="flex-grow border-t border-[#588157]"></div>
         <span className="text-3xl font-bold flex-shrink sm:text-2xl md:text-3xl lg:text-4xl">
-          VENTAJAS
+          {t("advantages")}
         </span>
         <div className="flex-grow border-t border-[#588157]"></div>
       </div>
@@ -17,19 +19,19 @@ export default function SectionSix() {
           <div className="p-4">
             <div className="m-5 rounded-2xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                Fuente sostenible de cereza de café
+                {t("coffe-sustainable")}
               </h1>
             </div>
 
             <div className="m-5 rounded-2xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                100% de integridad biológica
+                {t("100-integrity")}
               </h1>
             </div>
 
             <div className="m-5 rounded-2xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                Sin pruebas en animales
+                {t("animal-testing")}
               </h1>
             </div>
           </div>
@@ -37,12 +39,12 @@ export default function SectionSix() {
           <div className="p-4 sm:p-5 md:p-6">
             <div className="m-5 rounded-xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                Deseable INCI
+                {t("inci")}
               </h1>
             </div>
             <div className="m-5 rounded-full shadow-lg shadow-gray-500 bg-[#5881579c]">
               <h1 className="text-center text-xl sm:text-xl md:text-2xl text-white font-semibold p-5">
-                Tecnología patentada de doble acción
+                {t("patented-tecnology-dual")}
               </h1>
             </div>
           </div>
@@ -50,17 +52,17 @@ export default function SectionSix() {
           <div className="p-4 sm:p-5 md:p-6">
             <div className="m-5 rounded-xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                Fácil adaptabilidad
+                {t("easy-adaptability")}
               </h1>
             </div>
             <div className="m-5 rounded-xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                Cumplimiento global
+                {t("global-compliance")}
               </h1>
             </div>
             <div className="m-5 rounded-xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                Antioxidante líder en el mercado
+                {t('market-antioxidant')}
               </h1>
             </div>
           </div>

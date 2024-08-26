@@ -4,15 +4,19 @@
 
 @layer base {
   @font-face {
-    font-family: 'Helvetica Neue Roman'; /* Nombre personalizado para la fuente */
+    font-family: 'Helvetica Neue Roman';
+    /* Nombre personalizado para la fuente */
     /*src: url('/fonts/helvetica-neue-5/HelveticaNeueItalic.ttf') format('truetype'); /* Ruta relativa a la fuente */
-    src: local('/fonts/helvetica-neue-5/HelveticaNeueRoman.otf'); /* Ruta relativa a la fuente */
-    font-weight: 400; /* Ajusta el peso según la fuente */
-    font-style: italic; /* Estilo de la fuente */
+    src: local('/fonts/helvetica-neue-5/HelveticaNeueRoman.otf');
+    /* Ruta relativa a la fuente */
+    font-weight: 400;
+    /* Ajusta el peso según la fuente */
+    font-style: italic;
+    /* Estilo de la fuente */
   }
-  
+
   html {
-    font-family: 'Helvetica Neue Roman',  system-ui, sans-serif;
+    font-family: 'Helvetica Neue Roman', system-ui, sans-serif;
   }
 }
 
@@ -131,7 +135,7 @@ body {
   /* height: 900px; */
 }
 
-.section-img img{
+.section-img img {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
@@ -139,7 +143,7 @@ body {
   transition: .5s ease;
 }
 
-.section-img img:hover{
+.section-img img:hover {
   cursor: crosshair;
   width: 1080px;
   opacity: 1;
@@ -152,9 +156,43 @@ body {
   left: 0;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  transform: rotate(180deg); /* Rotar el texto si es necesario */
-  padding: 10px; /* Espacio alrededor del texto */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
-  color: white; /* Color del texto */
+  transform: rotate(180deg);
+  /* Rotar el texto si es necesario */
+  padding: 10px;
+  /* Espacio alrededor del texto */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente para el texto */
+  color: white;
+  /* Color del texto */
 }
 
+/* Tooltip icon whatsapp */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-container .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(7, 41, 2);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  /* Posiciona el tooltip en el centro vertical del contenedor */
+  right: 125%;
+  /* Posiciona el tooltip a la izquierda del contenedor */
+  margin-top: -15px;
+  /* Ajusta la posición vertical para centrar el tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
