@@ -4,9 +4,8 @@ import SectionThree from "@/components/cuidado-personal/SectionThree";
 import SectionFour from "@/components/cuidado-personal/SectionFour";
 import SectionFive from "@/components/cuidado-personal/SectionFive";
 import SectionSix from "@/components/cuidado-personal/SectionSix";
-import EnlacesDistribuir from "@/components/nuestros-productos/Enlaces-Distribuir";
 
-function page() {
+function CuidadoPersonal() {
   return (
     <>
       <div className="relative w-full overflow-hidden">
@@ -34,4 +33,4 @@ function page() {
   );
 }
 
-export default page;
+export default CuidadoPersonal;

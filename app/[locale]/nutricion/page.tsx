@@ -1,4 +1,3 @@
-import EnlacesDistribuir from "@/components/nuestros-productos/Enlaces-Distribuir";
 import AtributosFruta from "@/components/nutricion/AtributosFruta";
 import BeneficioFruta from "@/components/nutricion/BeneficioFruta";
 import SlideImagenes from "@/components/nutricion/SlideImagenes";
@@ -13,7 +12,7 @@ import { IoRestaurantSharp } from "react-icons/io5";
 import { MdSportsHandball } from "react-icons/md";
 import { useTranslations } from "next-intl";
 
-export default function page() {
+export default function Nutricion() {
   const t = useTranslations();
 
   const slideContent: ISlideContent[] = [
