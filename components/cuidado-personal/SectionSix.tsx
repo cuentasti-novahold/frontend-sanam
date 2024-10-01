@@ -62,7 +62,7 @@ export default function SectionSix() {
             </div>
             <div className="m-5 rounded-xl shadow-lg shadow-blue-300/50 bg-[#2474be80]">
               <h1 className="text-center text-white text-xl sm:text-xl md:text-2xl p-5">
-                {t('market-antioxidant')}
+                {t("market-antioxidant")}
               </h1>
             </div>
           </div>

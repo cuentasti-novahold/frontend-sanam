@@ -1,16 +1,16 @@
 "use client";
 
 import React from "react";
-import "@/styles/proceso.css";
 import Image from "next/image";
-import AOS from "aos";
+import "@/styles/proceso.css";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 
 export default function ImpactPlanet() {
   const t = useTranslations();
+
   const p_impact_planet_parts = t("p-impact-planet").split("||");
+
   return (
     <div
       className="xl:flex p-2 xl:p-10 xl:items-center xl:justify-center bg-[#69742962] xl:min-h-screen"

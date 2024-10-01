@@ -4,13 +4,6 @@ export default function SectionOne() {
   const t = useTranslations();
   return (
     <div className="relative overflow-hidden">
-      {/* <Image
-        className="w-full h-auto"
-        width={1200}
-        height={800}
-        src={"/img/proceso/banner-proceso.jpg"}
-        alt="banner proceso"
-      /> */}
       <video
         className="w-full h-auto"
         width="1200"

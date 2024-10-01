@@ -10,8 +10,10 @@ import { useTranslations } from "next-intl";
 
 export default function OurImpact() {
   const t = useTranslations();
+
   /* Obtengo el texto y lo divido en dos partes usando los || */
   const p_impact_parts = t("p-impact-coffe").split("||");
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duración de la animación en milisegundos

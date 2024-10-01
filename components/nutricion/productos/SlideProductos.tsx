@@ -1,6 +1,5 @@
 import React from "react";
 import SlideImagenes from "../SlideImagenes";
-import { MdSportsHandball } from "react-icons/md";
 import { ISlideContent } from "@/types/SlideContent";
 import { GiFruitBowl } from "react-icons/gi";
 import { useTranslations } from "next-intl";
@@ -15,10 +14,7 @@ const images = [
     text: "Producto nutracéutico codesarrollado con la Fundación Cardiovascular de Colombia, que mejora la función y estructura muscular esquelética y respiratoria en humanos.",
   },
 ];
-/* "Concentrado de fruta de Café en sachet, perfecto para  llevar a cualquier lugar.", */
-/* "Concentrado de fruta de Café en sobre, perfecto para llevar a cualquier lugar. Adicionalmente contiene 4 ingredientes con alto poder antioxidante: te negro, semilla de uva, hoja de moringa y betaglucanos de ganoderma lucidum." */
-/* "Es la primera bebida diseñada para ayudar a prevenir la formación de cálculos urinarios. La combinación de las dosis adecuadas de sales de citrato con fruta de café, hacen que se eviten la formación de los cristales productores de los cálculos." */
-/* "Producto nutracéutico codesarrollado con la Fundación Cardiovascular de Colombia, que mejora la función y estructura muscular esquelética y respiratoria en humanos." */
+
 export default function SlideProductos() {
   const t = useTranslations();
 

@@ -8,13 +8,12 @@ import { usePathname } from "next/navigation";
 export default function Footer() {
   const t = useTranslations();
   const pathname = usePathname();
-  const locale = pathname.split("/")[1]; // Extrae el idioma de la ruta
+  const locale = pathname.split("/")[1]; 
 
   return (
     <footer className="px-5 lg:px-40 bg-white pt-8 pb-1">
       <div className="mx-auto flex flex-col lg:flex-row justify-between">
         <div className="my-5">
-          {/* <p className='font-bold text-lg uppercase sanam-gray'>Sanam ®</p> */}
           <Link className="navbar-brand mr-5" href="/">
             <Image
               width={200}
@@ -66,7 +65,6 @@ export default function Footer() {
             <li className="">
               <Link href={`/${locale}/proceso`}>{t("process")}</Link>
             </li>
-            {/* <li className=''><Link href="#">Contacto</Link></li> */}
           </ul>
         </div>
         <div className="my-5">

@@ -34,17 +34,14 @@ export default function SeccionThree() {
 
         <div className="w-full lg:flex">
           <div className="lg:w-1/2 lg:flex lg:flex-col lg:p-10">
-            {/* <h1 className='text-6xl sanam-green font-bold pb-10'>Terax vs Otros Productos</h1> */}
-
             <div className="space-y-4 ">
               {" "}
               {/* Alineación vertical con espacio entre elementos */}
               {items.map((item, index) => (
                 <div key={index} className="flex items-center">
-                  {" "}
                   {/* Alinear horizontalmente */}
                   <FaPlus className="sanam-green mx-3 text-2xl" /> {/* Ícono */}
-                  <p className="sanam-gray font-bold text-2xl">{item}</p>{" "}
+                  <p className="sanam-gray font-bold text-2xl">{item}</p>
                   {/* Texto */}
                 </div>
               ))}

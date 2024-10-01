@@ -9,11 +9,6 @@ interface SlideContentProps {
 
 export default function SlideImagenes({ slideContent }: SlideContentProps) {
 
-    // if (!Array.isArray(slideContent)) {
-    //     console.error('slideContent is not an array', slideContent);
-    //     return null;
-    //   }
-
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (

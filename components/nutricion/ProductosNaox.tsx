@@ -1,14 +1,14 @@
 'use client';
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { use } from 'react'
+import React from 'react'
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export default function ProductosNaox() {
     const t = useTranslations();
     const pathname = usePathname();
-    const locale = pathname.split("/")[1]; // Extrae el idioma de la ruta
+    const locale = pathname.split("/")[1];
     return (
         <div className='bg-[#05825d] flex py-8'>
 

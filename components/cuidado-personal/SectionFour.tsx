@@ -1,4 +1,5 @@
 "use client";
+
 import { Chart } from "chart.js";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
@@ -239,8 +240,6 @@ export default function SectionFour() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2 m-6">
         {/*Grafica uno*/}
         <div className="flex flex-col m-2 rounded break-words shadow-lg bg-white">
-          {/* relative */}
-
           <div className="flex rounded-t m-1 px-6 py-6 bg-transparent">
             <div className="flex flex-wrap">
               <div className="flex-grow flex-1 relative w-full max-w-full">
@@ -289,7 +288,6 @@ export default function SectionFour() {
 
           <div className="flex items-center justify-center p-1 m-3 rounded-3xl bg-amber-900">
             <p className="text-center text-white font-bold">
-              {/* +246% vs Retinol <br /> +162% vs CoQ10 */}
               {t("+246")} {t("vs")} {t("retinol")} <br />
               {t("+162")} {t("vs")} {t("coq")}
             </p>
@@ -313,14 +311,8 @@ export default function SectionFour() {
               <canvas id="bar-chart-3" ref={graph_three}></canvas>
             </div>
           </div>
-          {/*  <div className="flex items-center justify-center p-1 m-3 rounded-3xl bg-amber-900">
-            <p className="text-center text-white font-bold">
-              +246% vs Retinol <br /> +162% vs CoQ10
-            </p>
-          </div> */}
         </div>
       </div>
     </>
   );
 }
-/* "retinol-coq10": "+89% vs Retinol <br/> +58% vs CoQ10", */

@@ -14,12 +14,11 @@ export default function NavbarCustom({
 }: navbarCustomProps) {
   const t = useTranslations();
   const pathname = usePathname();
-  const locale = pathname.split("/")[1]; // Extrae el idioma de la ruta
+  const locale = pathname.split("/")[1];
 
   return (
     <>
       <Link
-        /*    href="/agricultura" */
         href={`/${locale}/agricultura`}
         onClick={(e) => handleClick}
         className={`text-gray-500 hover:text-green-400 uppercase ${

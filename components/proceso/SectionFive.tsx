@@ -7,7 +7,7 @@ export default function SectionFive() {
     <>
       <div className="flex items-center justify-center">
         <h1 className="uppercase text-center text-4xl  font-semibold">
-          {t('our')} {t('presence')}
+          {t("our")} {t("presence")}
         </h1>
       </div>
 
@@ -15,12 +15,11 @@ export default function SectionFive() {
         <div className="lg:w-full sm:flex items-center">
           <div className="w-full lg:w-1/3">
             <div className="flex justify-center items-center rounded-md w-full mb-3">
-              {/* <h2 className="text-3xl font-bold m-2">Colombia</h2> */}
               <h2 className="flex items-center text-2xl xl:text-xl 2xl:text-2xl font-bold m-2 text-center">
-                {t('in')} {t('colombia')} {t('we-are')}
+                {t("in")} {t("colombia")} {t("we-are")}
                 <Image
-                  src={"img/proceso/sanam-icon.svg"}
-                  alt={"country"}
+                  src={"/img/proceso/sanam-icon.svg"} 
+                  alt={"colombia"}
                   width={150}
                   height={200}
                   className="ml-2 mt-2"
@@ -37,16 +36,13 @@ export default function SectionFive() {
               height={400}
               className="object-cover rounded-lg shadow-xl mb-4"
             />
-            {/* <h2 className="text-2xl text-center font-semibold">
-              En Colombia somos Sanam
-            </h2> */}
           </div>
 
           <div className="w-full lg:w-1/3">
             <div className="flex flex-col items-start p-5">
               <div className="flex justify-center items-center rounded-md w-full ">
                 <h2 className="text-3xl font-bold m-2 text-center">
-                {t('home-presence')}
+                  {t("home-presence")}
                 </h2>
               </div>
 
@@ -56,12 +52,11 @@ export default function SectionFive() {
 
           <div className="w-full lg:w-1/3">
             <div className="flex justify-center items-center rounded-md w-full mb-3">
-              {/*  <h2 className="text-3xl font-bold m-2">Costa Rica</h2> */}
               <h2 className="flex items-center text-2xl xl:text-xl 2xl:text-2xl font-bold m-2 text-center">
-              {t('in')} {t('costa-rica')} {t('we-are')}
+                {t("in")} {t("costa-rica")} {t("we-are")}
                 <Image
                   src={"/img/proceso/agrisanam.png"}
-                  alt={"country"}
+                  alt={"costa rica"}
                   width={150}
                   height={200}
                   className="ml-2"
@@ -78,21 +73,15 @@ export default function SectionFive() {
               height={400}
               className="object-cover rounded-lg shadow-xl mb-4"
             />
-            {/*  <h2 className="text-2xl text-center font-semibold">
-              En Costa Rica somos AgriSanam
-            </h2> */}
           </div>
         </div>
       </div>
 
       <div className="flex justify-center mb-6 mx-16 mt-5 border shadow-xl ">
         <h1 className="text-2xl text p-5 font-semibold">
-          {/* Estamos ubicados en paises internacionalmente reconocidos por la
-          calidad y produccion del Cafe */}
-          {t('p-located-countries-coffee')}
+          {t("p-located-countries-coffee")}
         </h1>
       </div>
     </>
   );
 }
-/* lg:space-x-10 mx-[4rem] */

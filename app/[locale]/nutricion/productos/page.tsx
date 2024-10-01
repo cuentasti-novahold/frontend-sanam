@@ -1,5 +1,4 @@
 import AporteMundo from "@/components/nuestros-productos/Aporte-Mundo";
-import EnlacesDistribuir from "@/components/nuestros-productos/Enlaces-Distribuir";
 import BannerTop from "@/components/nutricion/productos/BannerTop";
 import SlideProductos from "@/components/nutricion/productos/SlideProductos";
 import { ICardContent } from "@/types/CardContent";
@@ -37,13 +36,11 @@ export default function Productos() {
 
       <div className="h-1/2 p-14 bg-slate-500">
         <p className="uppercase text-5xl text-white">
-          {/* PRESENTACION INDUSTRIAL 1 / 5 / 20 / 200 KG */}
           {t("np-industrial-presentation")}
         </p>
       </div>
 
       <div className="bg-indigo-500">
-        {" "}
         {/* Carrusel horizontal */}
         <SlideProductos />
       </div>

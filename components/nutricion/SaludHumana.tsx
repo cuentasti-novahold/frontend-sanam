@@ -32,7 +32,7 @@ export default function SaludHumana() {
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
             <GiStoneStack size={80} className="" />
           </div>
-          {/* Otro contenido dentro del div */}
+
           <p className="text-xl mt-5 text-left">
             {p_nt_urinary_stones.map((part, index) => (
               <React.Fragment key={index}>
@@ -46,7 +46,7 @@ export default function SaludHumana() {
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <FaHeartbeat size={80} />
           </div>
-          {/* Otro contenido dentro del div */}
+
           <p className="text-xl mt-5 text-left">
             {p_nt_nutraceutical.map((part, index) => (
               <React.Fragment key={index}>

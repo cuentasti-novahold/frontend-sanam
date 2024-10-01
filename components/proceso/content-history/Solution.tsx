@@ -1,15 +1,16 @@
 "use client";
 
-import "@/styles/proceso.css";
+import React from "react";
 import Image from "next/image";
 import AOS from "aos";
+import "@/styles/proceso.css";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
-import React from "react";
 
 export default function Solution() {
   const t = useTranslations();
+
   const patent_certificate_parts = t("patent-certificate-registration").split(
     "||"
   );

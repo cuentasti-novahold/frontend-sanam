@@ -6,7 +6,7 @@ export default function SectionFour() {
     <>
       <div className="flex items-center justify-center xl:mt-12">
         <h1 className="text-4xl text-center font-semibold">
-          {t('our-awards')}
+          {t("our-awards")}
         </h1>
       </div>
 

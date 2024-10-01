@@ -8,7 +8,7 @@ import IndicatorNav from "./IndicatorNav";
 import { FaX } from "react-icons/fa6";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Control del menú principal
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
   const [activeLink, setActiveLink] = useState("");
 
   const toggleMenu = () => {

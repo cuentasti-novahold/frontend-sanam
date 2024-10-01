@@ -110,7 +110,6 @@ export default function End() {
                     alt="Empleo"
                   />
                   <p className="text-sm xl:text-base w-[10rem] mx-[9rem] px-10 xl:p-4 h-[2rem] text-[#f6f7f2]">
-                    {/*  Promovemos la generación de Empleos */}
                     {t("generaion-jobs")}
                   </p>
                 </div>
@@ -124,7 +123,6 @@ export default function End() {
                     alt="Dinero"
                   />
                   <p className="text-sm xl:text-base w-[10rem] mx-[9rem] px-6 xl:p-4 h-[2rem] text-[#f6f7f2]">
-                    {/* Retribuimos económicamente a los productores */}
                     {t("economically-producers")}
                   </p>
                 </div>
@@ -138,7 +136,6 @@ export default function End() {
                     alt="Ecnonomia"
                   />
                   <p className="text-sm xl:text-base w-[10rem] mx-[9rem] px-10 xl:p-4 h-[2rem] text-[#f6f7f2]">
-                    {/* Impulsamos el desarrollo económico en zonas rurales */}
                     {t("promote-rural-areas")}
                   </p>
                 </div>
@@ -152,7 +149,6 @@ export default function End() {
                     alt="Vida"
                   />
                   <p className="text-sm xl:text-base w-[7rem] mx-[10rem] px-5 xl:px-5 2xl:px-1 xl:p-4 h-[2rem] text-[#f6f7f2]">
-                    {/* Aumentamos la calidad de vida de nuestros agricultores */}
                     {t("increase-life")}
                   </p>
                 </div>
@@ -161,10 +157,7 @@ export default function End() {
           </div>
 
           <div className="flex mt-[6rem] xl:mt-[7rem] items-center justify-center">
-            <p className="text-[#d9dad7] mb-5">
-              {/* Hoy beneficiamos directamente +5.500 agricultores. */}
-              {t("p-benefit-farmers")}
-            </p>
+            <p className="text-[#d9dad7] mb-5">{t("p-benefit-farmers")}</p>
           </div>
         </div>
       </div>
@@ -190,8 +183,6 @@ export default function End() {
               alt="Planeta"
             />
             <p className="text-sm xl:text-lg xl:mr-10 2xl:mr-0 w-[16rem] xl:w-[20rem] text-[#333333]">
-              {/* Obtenemos un planeta más limpio, autosostenible y un futuro
-              ilusionante. */}
               {t("cleaner-planet")}
             </p>
           </div>
@@ -205,7 +196,6 @@ export default function End() {
               alt="Personas"
             />
             <p className="text-sm xl:text-lg w-[16rem] xl:w-[20rem] xl:mr-[5rem] text-[#333333]">
-              {/*  Mejoramos la calidad de vida de nuestros consumidores. */}
               {t("quality-consumers")}
             </p>
           </div>
@@ -219,7 +209,6 @@ export default function End() {
               alt="Bol"
             />
             <p className="text-sm xl:text-lg w-[16rem] xl:w-[20rem] xl:mr-[10rem] text-[#333333]">
-              {/* Desarrollamos alimentos sostenibles, sanos y nutritivos. */}
               {t("develop-sustainable")}
             </p>
           </div>
@@ -233,7 +222,6 @@ export default function End() {
               alt="Arbol"
             />{" "}
             <p className="text-sm xl:text-lg w-[16rem] xl:w-[20rem] xl:mr-[15rem] text-[#333333]">
-              {/* Impulsamos el desarrollo económico y social. */}
               {t("social-economic-development")}
             </p>
           </div>
@@ -247,7 +235,6 @@ export default function End() {
               alt="Planta"
             />{" "}
             <p className="text-sm xl:text-lg w-[16rem] xl:w-[20rem] xl:mr-[20rem] text-[#333333]">
-              {/* Promovemos la agricultura sostenible. */}
               {t("promote-sustainable")}
             </p>
           </div>
@@ -261,7 +248,6 @@ export default function End() {
               alt="Caja"
             />
             <p className="text-sm xl:text-lg w-[16rem] xl:w-[20rem] 2xl:w-[20rem] xl:mr-[30rem] 2xl:mr-[30rem] text-[#333333]">
-              {/* Recuperamos y limpiamos los suelos. */}
               {t("recover-clean")}
             </p>
           </div>

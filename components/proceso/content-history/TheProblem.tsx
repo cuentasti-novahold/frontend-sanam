@@ -10,7 +10,9 @@ import { useTranslations } from "next-intl";
 
 export default function TheProblem() {
   const t = useTranslations();
+
   const p_problem_parts = t("p-problem-love-coffe").split("||");
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duración de la animación en milisegundos
@@ -35,13 +37,11 @@ export default function TheProblem() {
 
       <div className="flex-1 w-34 m-3 xl:m-0">
         <div className="flex flex-col items-center justify-center">
-          {/* xl:justify-between */}
           <h1 className="uppercase text-3xl xl:text-4xl mt-4 xl:mt-0 font-semibold">
-          {t('the-problem')}
+            {t("the-problem")}
           </h1>
           <h1 className="text-2xl xl:text-3xl m-3 xl:text-right ">
-            {/* xl:text-left */}
-            {t('love-coffe')}
+            {t("love-coffe")}
           </h1>
         </div>
 

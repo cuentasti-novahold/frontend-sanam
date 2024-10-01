@@ -60,4 +60,3 @@ export default function ProductosBanner() {
     </div>
   );
 }
-/* Bebidas Energizantes y de Bienestar */

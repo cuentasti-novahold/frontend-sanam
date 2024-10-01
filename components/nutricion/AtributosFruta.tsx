@@ -59,4 +59,3 @@ export default function AtributosFruta() {
     </div>
   );
 }
-/* 'Fuerte relevante de antioxidantes' */

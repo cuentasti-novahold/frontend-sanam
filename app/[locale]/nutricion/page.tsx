@@ -59,7 +59,6 @@ export default function Nutricion() {
   ];
   return (
     <>
-      {/* sección 1 */}
       <div className="px-5 lg:px-40 xl:px-40 relative bg-[#a67649]">
         <ConcentradoBanner />
       </div>
