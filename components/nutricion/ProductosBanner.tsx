@@ -1,62 +1,46 @@
 import React from "react";
-import { GiCoffeeMug, GiDrinkMe, GiDrinking, GiKetchup } from "react-icons/gi";
-import { SiJusteat } from "react-icons/si";
-import { SlEnergy } from "react-icons/sl";
 import { useTranslations } from "next-intl";
+import { ICircleImage } from "@/types/CircleImage";
+import CircleImage from "../agricultura/seccion-one/CircleImage";
 
 export default function ProductosBanner() {
   const t = useTranslations();
+
+  const circlesImages: ICircleImage[] = [
+    {
+      imageUrl: "/img/nutricion-humana/icons/web_cafe-33.png",
+      description: t("coffe-alternative") + " " + t("and") + " " + t("tea"),
+    },
+    {
+      imageUrl: "/img/nutricion-humana/icons/web_bebidas.png",
+      description: t("energy-drink"),
+    },
+    {
+      imageUrl: "/img/nutricion-humana/icons/web_seitzers.png",
+      description: t("nt-hard"),
+    },
+    {
+      imageUrl: "/img/nutricion-humana/icons/web_gel.png",
+      description: t("nt-gels"),
+    },
+    {
+      imageUrl: "/img/nutricion-humana/icons/web_snaks.png",
+      description: t("snacks"),
+    },
+    {
+      imageUrl: "/img/nutricion-humana/icons/web_salsas.png",
+      description: t("sauces") + " " + t("and") + " " + t("dressings"),
+    },
+  ];
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-6 gap-10 justify-center items-center pb-10">
-      <div className="flex flex-col items-center">
-        <GiCoffeeMug
-          size={140}
-          className="rounded-full bg-[#663300] p-2 text-white"
+    <div className="md:grid lg:flex md:grid-cols-2 lg:flex-row justify-center items-center w-full mb-6 px-20 lg:gap-5">
+      {circlesImages.map((cir, index) => (
+        <CircleImage
+          key={index}
+          imageUrl={cir.imageUrl}
+          description={cir.description}
         />
-        <p className="text-center mt-2">
-          {t('coffe-alternative')} {t('and')} {t('tea')}
-        </p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <GiDrinking
-          size={140}
-          className="rounded-full bg-[#663300] p-2 text-white"
-        />
-        <p className="text-center mt-2">{t('energy-drink')}</p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <GiDrinkMe
-          size={140}
-          className="rounded-full bg-[#663300] p-2 text-white"
-        />
-        <p className="text-center mt-2">{t('nt-hard')}</p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <SlEnergy
-          size={140}
-          className="rounded-full bg-[#663300] p-2 text-white"
-        />
-        <p className="text-center mt-2">{t('nt-gels')}</p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <SiJusteat
-          size={140}
-          className="rounded-full bg-[#663300] p-2 text-white"
-        />
-        <p className="text-center mt-2">{t('snacks')}</p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <GiKetchup
-          size={140}
-          className="rounded-full bg-[#663300] p-2 text-white"
-        />
-        <p className="text-center mt-2">{t('sauces')} {t('and')} {t('dressings')}</p>
-      </div>
+      ))}
     </div>
   );
 }

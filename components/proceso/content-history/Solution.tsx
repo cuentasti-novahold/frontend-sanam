@@ -23,29 +23,32 @@ export default function Solution() {
 
   return (
     <>
-      <div className="flex m-5 items-center justify-center">
-        <h1 className="uppercase text-3xl xl:text-4xl 2xl:text-5xl font-semibold">
-          {t("the-solution")}
-        </h1>
-      </div>
-
-      <div
-        className="relative xl:flex items-center justify-center h-[25rem] xl:h-[30rem] 2xl:h-[40rem] "
-        data-aos="fade-down"
-      >
+      <div className="relative w-full overflow-hidden" data-aos="fade-down">
         <Image
-          className="rounded-lg"
-          layout="fill"
-          objectFit="cover"
-          src={"/img/proceso/solucion.jpg"}
+          className="w-full h-60 lg:h-full"
+          width={1920}
+          height={923}
+          src={"/img/proceso/la_solucion.png"}
           alt="banner proceso"
         />
 
-        <div className="absolute inset-0 opacity-50 rounded-lg bg-gray-700"></div>
-
-        <div className="absolute flex inset-0 sm:gap-10 md:gap-10 xl:gap-10 2xl:gap-20 items-center justify-center">
-          <div className="flex-initial w-[40rem] xl:w-[35rem]">
-            <p className="text-sm xl:text-xl mt-[14rem] xl:mt-[20rem] 2xl:mt-[30rem] ml-3 xl:ml-[1rem] 2xl:ml-[-2rem] text-[#bbb9b9]">
+        <div className="absolute inset-0 flex flex-col justify-center px-3 lg:mx-24 gap-5 lg:gap-10 text-[#FFFFFF]">
+          <div className="flex flex-col">
+            <h1 className="lg:text-4xl font-bold uppercase">
+              {" "}
+              {t("the-solution")}
+            </h1>
+            <h2 className="lg:text-2xl font-semibold">
+              {" "}
+              {t("patented-technology")}
+            </h2>
+            <p className="lg:text-xl lg:w-[20rem]">
+              {" "}
+              {t("p-technology-solution")}
+            </p>
+          </div>
+          <div>
+            <p className="lg:text-lg">
               {patent_certificate_parts.map((part, index) => (
                 <React.Fragment key={index}>
                   {part}
@@ -53,17 +56,6 @@ export default function Solution() {
                 </React.Fragment>
               ))}
             </p>
-          </div>
-
-          <div className="flex-initial w-50 mb-[5rem] 2xl:mb-[10rem] mr-2 xl:ml-[9rem] 2xl:ml-[30rem]">
-            <div className="grid place-items-center">
-              <h1 className="text-lg xl:text-5xl 2xl:text-6xl text-center font-bold text-white">
-                {t("patented-technology")}
-              </h1>
-              <p className="text-sm xl:text-2xl text-center mt-1 xl:mt-5 xl:w-[26rem] 2xl:w-[28rem] mx-auto text-[#c9c9c9]">
-                {t("p-technology-solution")}
-              </p>
-            </div>
           </div>
         </div>
       </div>

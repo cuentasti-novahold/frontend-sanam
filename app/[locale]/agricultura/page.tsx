@@ -6,16 +6,21 @@ import React from "react";
 
 export default function page() {
   return (
-    <>  
-      <SeccionOne />
-
-      <SeccionTwo />
-
-      <SeccionThree />
-
-      <SeccionFour />
-
-      {/* <EnlacesDistribuir/> */}  {/* Comentado por no utilidad hasta el momento */}
+    <>
+      <div>
+        <SeccionOne />
+      </div>
+      <div>
+        <SeccionTwo />
+      </div>
+      <div>
+        <SeccionThree />
+      </div>
+      <div>
+        <SeccionFour />
+      </div>
+      {/* <EnlacesDistribuir/> */}
+      {/* Comentado por no utilidad hasta el momento */}
     </>
   );
 }

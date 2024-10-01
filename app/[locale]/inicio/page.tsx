@@ -1,13 +1,12 @@
-import Bienestar from '@/components/home/Bienestar'
-import Banner from '@/components/home/Banner'
-import Industrias from '@/components/home/Industrias'
-import React from 'react'
-import '../../../styles/home.css';
-import NuestrosPilares from '@/components/home/NuestrosPilares';
-import Patente from '@/components/home/Patente';
-import Banderas from '@/components/home/Banderas';
-import PresenciaBanderas from '@/components/home/PresenciaBanderas';
-
+import "../../../styles/home.css";
+import Bienestar from "@/components/home/Bienestar";
+import Banner from "@/components/home/Banner";
+import Industrias from "@/components/home/Industrias";
+import React from "react";
+import NuestrosPilares from "@/components/home/NuestrosPilares";
+import Patente from "@/components/home/Patente";
+import Banderas from "@/components/home/Banderas";
+import PresenciaBanderas from "@/components/home/PresenciaBanderas";
 
 export default function Inicio() {
   return (
@@ -25,34 +24,34 @@ export default function Inicio() {
       {/* sección 2 */}
 
       {/* sección 3 */}
-      <div className="px-5 lg:px-40 xl:px-40 bg-gradient-to-r from-indigo-500 to-sky-400 text-wrap text-white">
+      <div className="px-5 md:px-20 bg-[#6C7F7D]/20">
         <Bienestar />
       </div>
       {/* sección 3 */}
 
       {/* sección 4 */}
-      <div className='px-5 lg:px-40 xl:px-40'>
+      <div>
         <NuestrosPilares />
       </div>
       {/* sección 4 */}
 
       {/* sección 5 */}
-      <div className='px-5 lg:px-40 xl:px-40 bg-gradient-to-r from-lime-100 to-lime-500'>
+      <div>
         <Patente />
       </div>
       {/* sección 5 */}
 
       {/* sección 6 */}
-      <div className='px-5 lg:px-40 xl:px-40'>
+      <div className="px-5 lg:px-10 xl:px-40">
         <Banderas />
       </div>
       {/* sección 6 */}
 
       {/* sección 7 */}
-      <div className=''>
+      <div>
         <PresenciaBanderas />
       </div>
       {/* sección 7 */}
     </>
-  )
+  );
 }

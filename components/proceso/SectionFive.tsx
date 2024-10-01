@@ -5,7 +5,7 @@ export default function SectionFive() {
   const t = useTranslations();
   return (
     <>
-      <div className="flex items-center justify-center">
+      {/*  <div className="flex items-center justify-center">
         <h1 className="uppercase text-center text-4xl  font-semibold">
           {t("our")} {t("presence")}
         </h1>
@@ -18,7 +18,7 @@ export default function SectionFive() {
               <h2 className="flex items-center text-2xl xl:text-xl 2xl:text-2xl font-bold m-2 text-center">
                 {t("in")} {t("colombia")} {t("we-are")}
                 <Image
-                  src={"/img/proceso/sanam-icon.svg"} 
+                  src={"/img/proceso/sanam-icon.svg"}
                   alt={"colombia"}
                   width={150}
                   height={200}
@@ -79,6 +79,49 @@ export default function SectionFive() {
 
       <div className="flex justify-center mb-6 mx-16 mt-5 border shadow-xl ">
         <h1 className="text-2xl text p-5 font-semibold">
+          {t("p-located-countries-coffee")}
+        </h1>
+      </div> */}
+
+      <div className="px-20 w-full md:pt-5">
+        <h1 className="text-2xl font-bold py-2">
+          {t("our")} {t("presence")}
+        </h1>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-center items-center mt-5 md:px-[18rem] lg:px-[4rem] md:space-x-[8rem] 2xl:space-x-32">
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <Image
+            src="/img/web_colombia.png"
+            alt={"country"}
+            width={250}
+            height={250}
+            className="object-cover rounded-lg mb-4 w-[200px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px]"
+          />
+          <div className="pl-3 w-[16rem]">
+            <h1 className="text-2xl font-bold">
+              {t("in")} {t("colombia")} {t("we-are")}
+            </h1>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <Image
+            src="/img/web_crica.png"
+            alt={"country"}
+            width={250}
+            height={250}
+            className="object-cover rounded-lg mb-4 w-[200px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px]" /*   className="2xl:w-[500px] 2xl:h-[600px]" */
+          />
+          <div className="m-5 w-[16rem]">
+            <h1 className="text-2xl font-bold">
+              {t("in")} {t("costa-rica")} {t("we-are")}
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center lg:mx-16 mt-5">
+        <h1 className="text-2xl px-5 lg:px-40">
           {t("p-located-countries-coffee")}
         </h1>
       </div>

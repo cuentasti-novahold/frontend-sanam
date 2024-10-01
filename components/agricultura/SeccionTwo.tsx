@@ -5,14 +5,12 @@ import { useTranslations } from "next-intl";
 export default function SeccionTwo() {
   const t = useTranslations();
   return (
-    <div className="w-full text-center bg-neutral-200 py-10">
-      <p className="text-3xl lg:text-5xl p-5 font-bold text-green-800">
+    <div className="w-full bg-[#6C7F7D]/20 my-6 py-8 md:space-y-0">
+      <p className="text-xl lg:text-xl p-5 md:mx-52 font-bold">
         {t("our-solutions")}
       </p>
 
-      {/* <p className="font-bold text-4xl pt-5 sanam-green">Aplicaciones Exitosas</p> */}
-
-      <div className="lg:flex w-full lg:p-5">
+      <div className="lg:flex justify-center items-center w-full lg:p-5 gap-4 space-y-5">
         <CardAplicacionesExitosas
           iconType="frijol"
           name={t("bean")}
@@ -33,34 +31,21 @@ export default function SeccionTwo() {
           }
         />
         <CardAplicacionesExitosas
-          iconType="maíz"
-          name={t("corn")}
+          iconType="caña"
+          name={t("sugar-cane")}
           subtitle={
             <>
-              <p>+15% {t("height")}</p>
-              <p>+11% {t("sheets")}</p>
+              <p>{t("txhaxm")}</p>
+              <p>{t("nrix")}</p>
               <p>
-                +9% {t("weight")} {t("in")} {t("corn")}{" "}
+                {t("s-12")} {t("sucrose")}
               </p>
-            </>
-          }
-        />
-        <CardAplicacionesExitosas
-          iconType="aguacate"
-          name={t("avocado")}
-          subtitle={
-            <>
-              <p>
-                + {t("quaje")} {t("flower")}
-              </p>
-              <p>+ {t("leaf-area")}</p>
-              <p className="text-xs">{t("refining-study")}</p>
             </>
           }
         />
       </div>
 
-      <div className="lg:flex w-full lg:p-5">
+      <div className="lg:flex justify-center items-center w-full lg:p-5 gap-4 space-y-5">
         <CardAplicacionesExitosas
           iconType="café"
           name={t("coffe")}
@@ -81,14 +66,39 @@ export default function SeccionTwo() {
           }
         />
         <CardAplicacionesExitosas
-          iconType="caña"
-          name={t("sugar-cane")}
+          iconType="aguacate"
+          name={t("avocado")}
           subtitle={
             <>
-              <p>{t("txhaxm")}</p>
-              <p>{t("nrix")}</p>
               <p>
-                {t("s-12")} {t("sucrose")}
+                + {t("quaje")} {t("flower")}
+              </p>
+              <p>+ {t("leaf-area")}</p>
+              <p className="text-xs">{t("refining-study")}</p>
+            </>
+          }
+        />
+      </div>
+
+      <div className="lg:flex justify-center items-center w-full lg:p-5 mt-6 md:mt-0 gap-4 space-y-5">
+        <CardAplicacionesExitosas
+          iconType="Lechuga"
+          name={t("lettuce")}
+          subtitle={
+            <>
+              <p> {t("pending")}</p>
+            </>
+          }
+        />
+        <CardAplicacionesExitosas
+          iconType="maíz"
+          name={t("corn")}
+          subtitle={
+            <>
+              <p>+15% {t("height")}</p>
+              <p>+11% {t("sheets")}</p>
+              <p>
+                +9% {t("weight")} {t("in")} {t("corn")}{" "}
               </p>
             </>
           }
@@ -108,16 +118,7 @@ export default function SeccionTwo() {
         />
       </div>
 
-      <div className="lg:flex w-full lg:p-5">
-        <CardAplicacionesExitosas
-          iconType="Lechuga"
-          name={t("lettuce")}
-          subtitle={
-            <>
-              <p> {t("pending")}</p>
-            </>
-          }
-        />
+      <div className="lg:flex justify-center items-center w-full lg:p-5 mt-6 md:mt-0 gap-4 space-y-5">
         <CardAplicacionesExitosas
           iconType="Tomate"
           name={t("tomato")}

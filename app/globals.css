@@ -4,19 +4,20 @@
 
 @layer base {
   @font-face {
-    font-family: 'Helvetica Neue Roman';
-    /* Nombre personalizado para la fuente */
-    /*src: url('/fonts/helvetica-neue-5/HelveticaNeueItalic.ttf') format('truetype'); /* Ruta relativa a la fuente */
-    src: local('/fonts/helvetica-neue-5/HelveticaNeueRoman.otf');
-    /* Ruta relativa a la fuente */
+    font-family: 'Tomato_Grotesk';
+    src: url('/fonts/Tomato_Grotesk/TomatoGrotesk-Regular.otf') ;
     font-weight: 400;
-    /* Ajusta el peso según la fuente */
-    font-style: italic;
-    /* Estilo de la fuente */
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Tomato_Grotesk';
+    src: url('/fonts/Tomato_Grotesk/TomatoGrotesk-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
   }
 
   html {
-    font-family: 'Helvetica Neue Roman', system-ui, sans-serif;
+    font-family: 'Tomato_Grotesk', system-ui, sans-serif;
   }
 }
 
@@ -120,11 +121,11 @@ body {
 
 
 .sanam-gray {
-  color: #757c7d;
+  color: #6B6B6B;
 }
 
 .sanam-green {
-  color: #468138;
+  color: #04AF30;
 }
 
 .section-img {
@@ -196,3 +197,4 @@ body {
   visibility: visible;
   opacity: 1;
 }
+

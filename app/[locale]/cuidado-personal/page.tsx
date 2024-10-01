@@ -4,31 +4,32 @@ import SectionThree from "@/components/cuidado-personal/SectionThree";
 import SectionFour from "@/components/cuidado-personal/SectionFour";
 import SectionFive from "@/components/cuidado-personal/SectionFive";
 import SectionSix from "@/components/cuidado-personal/SectionSix";
+import QuieresDistribuir from "@/components/agricultura/QuieresDistribuir";
 
 function CuidadoPersonal() {
   return (
     <>
-      <div className="relative w-full overflow-hidden">
+      <div>
         <SectionOne />
       </div>
-      <div className="md:p-20 lg:p-20">
+      <div>
         <SectionTwo />
       </div>
-      <div className="relative w-full overflow-hidden">
+      <div>
         <SectionThree />
       </div>
-      <div className="">
+      <div>
         <SectionFour />
       </div>
-      <div className="">
+      <div>
         <SectionFive />
       </div>
-      <div className="">
+      <div>
         <SectionSix />
       </div>
-      {/* <div>
-        <EnlacesDistribuir />
-      </div> */}
+      <div className="flex justify-center items-center w-full h-full lg:h-[10rem] shadow-md">
+        <QuieresDistribuir disposicion="fila" />
+      </div>
     </>
   );
 }

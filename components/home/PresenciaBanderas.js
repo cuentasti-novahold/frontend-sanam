@@ -81,12 +81,10 @@ export default function PresenciaBanderas() {
 
   return (
     <>
-      <div className="p-5 lg:px-40 xl:px-40 w-full bg-white">
-        <h1 className="text-5xl uppercase font-bold py-2">
-          {t("our-products")}
-        </h1>
+      <div className="mt-5 px-2 lg:px-40 xl:px-40 w-full">
+        <h1 className="text-4xl font-bold mt-2">{t("our-products")}</h1>
       </div>
-      <div className="w-full py-10 flex justify-center items-center bg-white">
+      <div className="flex justify-center items-center w-full py-3">
         <div
           className="w-full flex overflow-x-hidden scroll-smooth"
           ref={refCarrusel}
@@ -95,7 +93,7 @@ export default function PresenciaBanderas() {
           {flagImages.map((flag, index) => (
             <div
               key={index}
-              className="flex-shrink-0 mx-4 justify-center flex flex-col items-center"
+              className="flex flex-col items-center justify-center flex-shrink-0 mx-4"
             >
               <Image
                 src={flag.url}

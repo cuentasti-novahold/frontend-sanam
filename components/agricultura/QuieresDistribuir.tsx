@@ -1,25 +1,64 @@
-import Link from 'next/link'
-import React from 'react'
-import { FaBuilding, FaSalesforce } from 'react-icons/fa'
+"use client";
+import { IDistributorsLinksProps } from "@/types/DistributorsLinks";
+import Link from "next/link";
+import React from "react";
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
-export default function QuieresDistribuir() {
-  return (
-    <div className="w-full px-5 lg:px-40 py-12 bg-gray-200">
+export default function QuieresDistribuir({
+  disposicion,
+}: IDistributorsLinksProps) {
+  const t = useTranslations();
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1];
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 px-6 md:px-12">
-                <Link
-                    href="/nuestros-productos/terax/distribuir"
-                    className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out">
-                    <FaBuilding size={48} className="text-pink-500 mb-4" />
-                    <span className="text-xl font-bold text-gray-800 uppercase">Quieres Distribuir</span>
-                </Link>
-                <Link
-                    href="/nuestros-productos/terax/distribuidores"
-                    className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out">
-                    <FaSalesforce size={48} className="text-brown-500 mb-4" />
-                    <span className="text-xl font-bold text-gray-800 uppercase">Nuestros Distribuidores</span>
-                </Link>
-            </div>
-        </div>
-  )
+  // Función para construir la nueva URL con el idioma cambiado
+  const buildNewUrl = (newLocale: string) => {
+    const pathParts = pathname.split("/");
+    pathParts[1] = newLocale; // Reemplaza el idioma en la ruta
+    return pathParts.join("/");
+  };
+  if (disposicion === "columna") {
+    return (
+      <div className="flex flex-col w-full px-5 lg:px-20 py-12 gap-10">
+        <Link
+          className="group flex flex-col items-center text-center p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
+          href={`/${locale}/contacto`}
+        >
+          <span className="text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
+            {t("distribute")}
+          </span>
+        </Link>
+        <Link
+          className="group flex flex-col items-center text-center p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
+          href="/nuestros-productos/terax/distribuidores"
+        >
+          <span className="text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
+            {t("our-distributors")}
+          </span>
+        </Link>
+      </div>
+    );
+  } else {
+    return (
+      <div className="flex flex-col md:flex-row justify-center w-full p-5 lg:px-20 gap-10">
+        <Link
+          className="group flex flex-col justify-center items-center text-center md:w-[20rem] lg:w-[30rem] p-5 lg:p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
+          href={`/${locale}/contacto`}
+        >
+          <span className="text-xl lg:text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
+            {t("distribute")}
+          </span>
+        </Link>
+        <Link
+          className="group flex flex-col justify-center items-center text-center md:w-[20rem] lg:w-[30rem]  p-5 lg:p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
+          href="/nuestros-productos/terax/distribuidores"
+        >
+          <span className="text-xl lg:text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
+            {t("our-distributors")}
+          </span>
+        </Link>
+      </div>
+    );
+  }
 }

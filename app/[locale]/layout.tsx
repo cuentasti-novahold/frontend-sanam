@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
@@ -10,9 +9,6 @@ import "../../src/utils/animate-scroll";
 import "../globals.css";
 //i18n
 import { NextIntlClientProvider, useMessages } from "next-intl";
-
-// Definir la fuente Inter
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Web Sanam",
@@ -46,19 +42,19 @@ export default function RootLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <html lang={locale}>
-        <body className={`${inter.className} bg-gray-100`}>
-          {/* font-sans*/}
-          <Header />
-          <div className="">
-            <div className="w-full h-20 lg:h-36 bg-white">
-              {/* base navbar  */}
+        <body className="font-sans text-[#6B6B6B] bg-[#FFFFFF]">
+          <div>
+            {/* base navbar  */}
+            <div className="flex justify-center items-center w-full h-20 lg:h-[6rem] bg-[#FFFFFF]">
+              <Header />
             </div>
             {children}
           </div>
+
           <Footer />
-          {/* <Link href="https://wa.me/c/573142562821" className="scroll-top flex "><BiLogoWhatsapp /></Link>
-        <Link href="#" className="scroll-top flex"><FaChevronUp /></Link> */}
-          <div className="fixed bottom-8 right-10 flex flex-col items-end space-y-4">
+
+          {/* Iconos laterales derechos */}
+          <div className="fixed bottom-8 right-10 flex flex-col items-end space-y-4 z-20">
             <div className="tooltip-container">
               <Link
                 href="https://wa.me/573142562821"
@@ -68,12 +64,14 @@ export default function RootLayout({
                 <span className="tooltip-text">Contáctanos</span>
               </Link>
             </div>
-            <Link
-              href="#"
-              className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-500 text-white hover:bg-gray-600 transform hover:scale-110 transition duration-150 ease-in-out"
-            >
-              <FaChevronUp size="26" />
-            </Link>
+            <div>
+              <Link
+                href="#"
+                className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-500 text-white hover:bg-gray-600 transform hover:scale-110 transition duration-150 ease-in-out"
+              >
+                <FaChevronUp size="26" />
+              </Link>
+            </div>
           </div>
         </body>
       </html>

@@ -4,114 +4,76 @@ export default function SectionFour() {
   const t = useTranslations();
   return (
     <>
-      <div className="flex items-center justify-center xl:mt-12">
+      <div className="flex items-center px-20 lg:mt-16">{/* xl:mt-16 */}
         <h1 className="text-4xl text-center font-semibold">
           {t("our-awards")}
         </h1>
       </div>
 
-      <div className="flex flex-col mx-6 ">
-        <div className="flex gap-4 mt-6 justify-center">
-          <div className="m-4">
-            <Image
-              className=""
-              width={150}
-              height={130}
-              src={"/img/proceso/reconocimientos/reconocimiento-uno.png"}
-              alt="Reconocimiento uno"
-            />
-          </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-10 px-10 lg:px-40 gap-6 justify-center">
+        <Image
+          width={218}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-uno.png"}
+          alt="Reconocimiento uno"
+        />
 
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={140}
-              src={"/img/proceso/reconocimientos/reconocimiento-dos.png"}
-              alt="Reconocimiento dos"
-            />
-          </div>
+        <Image
+          width={199}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-dos.png"}
+          alt="Reconocimiento dos"
+        />
 
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={130}
-              src={"/img/proceso/reconocimientos/reconocimiento-tres.png"}
-              alt="Reconocimiento tres"
-            />
-          </div>
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-tres.png"}
+          alt="Reconocimiento tres"
+        />
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-cuatro.png"}
+          alt="Reconocimiento cuatro"
+        />
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-cinco.png"}
+          alt="Reconocimiento cinco"
+        />
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-ocho.png"}
+          alt="Reconocimiento seis"
+        />
 
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={130}
-              src={"/img/proceso/reconocimientos/reconocimiento-cuatro.png"}
-              alt="Reconocimiento cuatro"
-            />
-          </div>
-        </div>
-
-        <div className="flex gap-4 justify-center">
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={130}
-              src={"/img/proceso/reconocimientos/reconocimiento-cinco.png"}
-              alt="Reconocimiento cinco"
-            />
-          </div>
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={130}
-              src={"/img/proceso/reconocimientos/reconocimiento-ocho.png"}
-              alt="Reconocimiento seis"
-            />
-          </div>
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={140}
-              src={"/img/proceso/reconocimientos/reconocimiento-siete.png"}
-              alt="Reconocimiento siete"
-            />
-          </div>
-        </div>
-
-        <div className="flex gap-4 mb-6 justify-center">
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={130}
-              src={"/img/proceso/reconocimientos/reconocimiento-nueve.png"}
-              alt="Reconocimiento ocho"
-            />
-          </div>
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={130}
-              src={"/img/proceso/reconocimientos/reconocimiento-diez.png"}
-              alt="Reconocimiento nueve"
-            />
-          </div>
-          <div className="m-4">
-            <Image
-              className=""
-              width={140}
-              height={100}
-              src={"/img/proceso/reconocimientos/reconocimiento-seis.png"}
-              alt="Reconocimiento diez"
-            />
-          </div>
-        </div>
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-siete.png"}
+          alt="Reconocimiento siete"
+        />
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-nueve.png"}
+          alt="Reconocimiento ocho"
+        />
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-diez.png"}
+          alt="Reconocimiento nueve"
+        />
+        <Image
+          width={198}
+          height={198}
+          src={"/img/proceso/reconocimientos/reconocimiento-seis.png"}
+          alt="Reconocimiento diez"
+        />
       </div>
     </>
   );

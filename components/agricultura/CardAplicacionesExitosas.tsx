@@ -1,56 +1,140 @@
-import { GiCorn, GiAvocado, GiSugarCane, GiLemon, GiBeanstalk, GiRiceCooker, GiBananaBunch, GiGrapes, GiTomato } from 'react-icons/gi';
-import { FaCoffee } from 'react-icons/fa';
-import React from 'react';
-import { LuSalad } from 'react-icons/lu';
+import React from "react";
+import Image from "next/image";
 
 interface CardAplicacionesExitosasProps {
-    iconType: string;
-    name: string;
-    subtitle: React.ReactNode;
-  }
+  iconType: string;
+  name: string;
+  subtitle: React.ReactNode;
+}
 
-export default function CardAplicacionesExitosas({ iconType, name, subtitle }:CardAplicacionesExitosasProps) {
-    // Determinar el icono basado en el tipo de semilla
-    const renderIcon = () => {
-        switch(iconType) {
-            case 'frijol':
-                return <GiBeanstalk size={80} className="text-green-600" />;
-            case 'arroz':
-                return <GiRiceCooker size={80} className="text-green-600" />;
-            case 'maíz':
-                return <GiCorn size={80} className="text-green-600" />;
-            case 'aguacate':
-                return <GiAvocado size={80} className="text-green-600" />;
-            case 'café':
-                return <FaCoffee size={80} className="text-green-600" />;
-            case 'cacao':
-                return <GiBeanstalk size={80} className="text-green-600" />;
-            case 'caña':
-                return <GiSugarCane size={80} className="text-green-600" />;
-            case 'limón':
-                return <GiLemon size={80} className="text-green-600" />;
-            case 'Lechuga':
-                return <LuSalad  size={80} className="text-green-600" />;
-            case 'Tomate':
-                return <GiTomato size={80} className="text-green-600" />;
-            case 'Uva':
-                return <GiGrapes size={80} className="text-green-600" />;
-            case 'Plátano/Banano':
-                return <GiBananaBunch  size={80} className="text-green-600" />;
-            default:
-                return null; // Puedes poner un icono por defecto si quieres
-        }
-    };
+export default function CardAplicacionesExitosas({
+  iconType,
+  name,
+  subtitle,
+}: CardAplicacionesExitosasProps) {
+  // Determinar el icono basado en el tipo de semilla
+  const renderIcon = () => {
+    switch (iconType) {
+      case "frijol":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_frijol.png"
+            alt="Frijol"
+          />
+        );
+      case "arroz":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_arroz.png"
+            alt="arroz"
+          />
+        );
+      case "maíz":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_maiz.png"
+            alt="maiz"
+          />
+        );
+      case "aguacate":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_aguacate.png"
+            alt="aguacate"
+          />
+        );
+      case "café":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_cafe.png"
+            alt="cafe"
+          />
+        );
+      case "cacao":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_cacao.png"
+            alt="cacao"
+          />
+        );
+      case "caña":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_caña.png"
+            alt="caña"
+          />
+        );
+      case "limón":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_limon.png"
+            alt="limon"
+          />
+        );
+      case "Lechuga":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_lechuga.png"
+            alt="lechuga"
+          />
+        );
+      case "Tomate":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_tomate.png"
+            alt="tomate"
+          />
+        );
+      case "Uva":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_uva.png"
+            alt="uva"
+          />
+        );
+      case "Plátano/Banano":
+        return (
+          <Image
+            width={175}
+            height={175}
+            src="/img/agricultura/section-two/web_platano.png"
+            alt="platano"
+          />
+        );
+      default:
+        return null; // Puedes poner un icono por defecto si quieres
+    }
+  };
 
-    return (
-        <div className="w-full lg:w-1/4 lg:flex lg:items-center">
-            <div className="lg:w-1/3 flex justify-center">
-                {renderIcon()}
-            </div>
-            <div className="lg:w-2/3 lg:flex lg:flex-col lg:justify-start lg:items-start text-center lg:pl-5 sanam-gray">
-                <h3 className="font-bold text-2xl">{name}</h3>
-                <div className='lg:text-start'>{subtitle}</div>
-            </div>
-        </div>
-    );
+  return (
+    <div className="w-full lg:w-1/4 lg:flex lg:items-center">
+      <div className="lg:w-1/3 flex justify-center">{renderIcon()}</div>
+      <div className="lg:w-2/3 lg:flex lg:flex-col lg:justify-start lg:items-start text-center lg:pl-5 sanam-gray">
+        <h3 className="font-bold text-2xl">{name}</h3>
+        <div className="lg:text-start">{subtitle}</div>
+      </div>
+    </div>
+  );
 }

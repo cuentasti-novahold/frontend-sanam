@@ -1,27 +1,28 @@
+import React from "react";
 import AporteMundo from "@/components/nuestros-productos/Aporte-Mundo";
 import BannerTop from "@/components/nutricion/productos/BannerTop";
 import SlideProductos from "@/components/nutricion/productos/SlideProductos";
+import QuieresDistribuir from "@/components/agricultura/QuieresDistribuir";
 import { ICardContent } from "@/types/CardContent";
-import React from "react";
 import { useTranslations } from "next-intl";
 
 export default function Productos() {
   const t = useTranslations();
   const cardContentProps: ICardContent[] = [
     {
-      imgUrl: "/img/nuestros-productos/super-alimento.jpeg",
+      imgUrl: "/img/nuestros-productos/web_Alimento.png",
       alt: "SUPERALIMENTO",
       textOverlay: t("superfood"),
       description: t("np-webmd-labels"),
     },
     {
-      imgUrl: "/img/nuestros-productos/apoyo-caficultores.jpeg",
+      imgUrl: "/img/nuestros-productos/web_Agricultores.png",
       alt: "APOYAMOS LOS CAFICULTORES",
       textOverlay: t("support-growers"),
       description: t("np-opportunity-coffe"),
     },
     {
-      imgUrl: "/img/nuestros-productos/beneficio-medio-ambiente.jpeg",
+      imgUrl: "/img/nuestros-productos/web_Medioambiente.png",
       alt: "BENEFICIAMOS EL MEDIO AMBIENTE",
       textOverlay: t("bennefit-environment"),
       description: t("np-transform-waste"),
@@ -30,24 +31,19 @@ export default function Productos() {
 
   return (
     <>
-      <div className="px-50 py-5 w-full">
+      <div>
         <BannerTop />
       </div>
 
-      <div className="h-1/2 p-14 bg-slate-500">
-        <p className="uppercase text-5xl text-white">
-          {t("np-industrial-presentation")}
-        </p>
-      </div>
-
-      <div className="bg-indigo-500">
-        {/* Carrusel horizontal */}
+      <div>
         <SlideProductos />
       </div>
 
       <AporteMundo cardContent={cardContentProps} />
 
-      {/* <EnlacesDistribuir /> */}
+      <div className="flex justify-center items-center w-full h-full lg:h-[8rem] shadow-md">
+        <QuieresDistribuir disposicion="fila" />
+      </div>
     </>
   );
 }

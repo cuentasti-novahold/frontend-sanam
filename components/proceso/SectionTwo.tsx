@@ -6,16 +6,16 @@ import TheProblem from "@/components/proceso/content-history/TheProblem";
 export default function SectionTwo() {
   return (
     <>
-      <div className="mt-2">
+      <div>
         <OurImpact />
       </div>
-      <div className="mt-2">
+      <div>
         <TheProblem />
       </div>
-      <div className="mt-2">
+      <div>
         <ImpactPlanet />
       </div>
-      <div className="mt-2">
+      <div>
         <Solution />
       </div>
     </>

@@ -1,6 +1,5 @@
 import React from "react";
-import { FaHeartbeat } from "react-icons/fa";
-import { GiStoneStack } from "react-icons/gi";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export default function SaludHumana() {
@@ -10,51 +9,60 @@ export default function SaludHumana() {
 
   return (
     <>
-      <div className="w-full items-center p-10">
-        <div className="w-full justify-center text-center">
-          <h1 className="font-bold lg:text-7xl text-gray-600">
-            {t("human-health")}
-          </h1>
-        </div>
-
-        <div className="w-full flex text-center">
-          <div className="w-1/2 bg-sky-300 m-5 p-5 rounded-3xl">
-            <h1 className="font-bold text-4xl">{t("stones")}</h1>
-          </div>
-          <div className="w-1/2 bg-sky-400 m-5 p-5 rounded-3xl">
-            <h1 className="font-bold text-4xl">{t("life")}</h1>
-          </div>
-        </div>
+      <div className="justify-start pl-10 w-full">
+        <h1 className="font-bold text-2xl lg:text-2xl 2xl:text-4xl">
+          {t("human-health")}
+        </h1>
       </div>
 
-      <div className="w-full flex text-center p-10">
-        <div className="w-1/2 border-4 border-white rounded-xl m-5 p-10 relative">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-            <GiStoneStack size={80} className="" />
+      <div className="flex flex-col md:flex-row justify-center items-center w-full md:p-2 lg:px-30 xl:px-30 gap-1 ">
+        <div className="flex flex-col md:flex-row justify-center items-center w-full md:h-[24rem] gap-4 p-5 ">
+          <div className="flex justify-center md:justify-end w-full h-full">
+            <Image
+              alt="Stone"
+              src="/img/nutricion-humana/icons/web_stone.png"
+              width={175}
+              height={328}
+            />
           </div>
-
-          <p className="text-xl mt-5 text-left">
-            {p_nt_urinary_stones.map((part, index) => (
-              <React.Fragment key={index}>
-                {part}
-                {index < p_nt_urinary_stones.length - 1 && <br />}
-              </React.Fragment>
-            ))}
-          </p>
+          <div className="w-full h-full">
+            <p className="text-lg font-bold text-center md:text-left">
+              {t("stones")}
+            </p>
+            <p className="lg:text-xl md:mt-2 lg:mt-2 text-center md:text-left">
+              {p_nt_urinary_stones.map((part, index) => (
+                <React.Fragment key={index}>
+                  {part}
+                  {index < p_nt_urinary_stones.length - 1 && <br />}
+                </React.Fragment>
+              ))}
+            </p>
+          </div>
         </div>
-        <div className="w-1/2 border-4 border-white rounded-xl m-5 p-10 relative">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <FaHeartbeat size={80} />
-          </div>
 
-          <p className="text-xl mt-5 text-left">
-            {p_nt_nutraceutical.map((part, index) => (
-              <React.Fragment key={index}>
-                {part}
-                {index < p_nt_nutraceutical.length - 1 && <br />}
-              </React.Fragment>
-            ))}
-          </p>
+        <div className="flex flex-col md:flex-row justify-center items-center w-full md:h-[24rem] gap-4 p-5 lg:pr-[8rem] 2xl:pr-[12rem]">
+          <div className="flex justify-center md:justify-end w-full h-full">
+            <Image
+              alt="Stone"
+              src="/img/nutricion-humana/icons/web_life.png"
+              width={175}
+              height={328}
+            />
+          </div>
+          <div className="w-full h-full">
+            <p className="text-lg font-bold text-center md:text-left">
+              {t("life")}
+            </p>
+
+            <p className="lg:text-xl md:mt-2 lg:mt-2 text-center md:text-left">
+              {p_nt_nutraceutical.map((part, index) => (
+                <React.Fragment key={index}>
+                  {part}
+                  {index < p_nt_nutraceutical.length - 1 && <br />}
+                </React.Fragment>
+              ))}
+            </p>
+          </div>
         </div>
       </div>
     </>

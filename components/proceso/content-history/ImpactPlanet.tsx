@@ -12,19 +12,14 @@ export default function ImpactPlanet() {
   const p_impact_planet_parts = t("p-impact-planet").split("||");
 
   return (
-    <div
-      className="xl:flex p-2 xl:p-10 xl:items-center xl:justify-center bg-[#69742962] xl:min-h-screen"
-      data-aos="fade-right"
-    >
-      <div className="flex-1 w-34 m-3 xl:m-0">
-        <div className="flex items-center justify-center xl:justify-between">
-          <h1 className="uppercase text-3xl xl:text-4xl mt-4 xl:mt-0 text-center font-semibold">
-            {t("impact-planet")}
-          </h1>
-        </div>
-
-        <div className="p-5 xl:p-0 xl:mt-[1rem] xl:mr-8">
-          <p className="text-xl xl:text-2xl text-justify text-[#3b4146]">
+    <>
+      <div
+        className="flex flex-col lg:flex-row w-full bg-[#6C7F7D]/20"
+        data-aos="fade-right"
+      >
+        <div className="flex flex-col justify-center lg:w-1/2 py-3 px-20">
+          <h1 className="text-xl font-bold uppercase"> {t("our-impact")}</h1>
+          <p className="text-lg">
             {p_impact_planet_parts.map((part, index) => (
               <React.Fragment key={index}>
                 {part}
@@ -33,18 +28,16 @@ export default function ImpactPlanet() {
             ))}
           </p>
         </div>
-      </div>
 
-      <div className="relative xl:flex flex-1 w-76 m-3 xl:items-center xl:justify-center h-[20rem] xl:h-[33rem]">
-        <Image
-          className="rounded-lg"
-          layout="fill"
-          objectFit="cover"
-          src={"/img/proceso/impacto-planeta.jpg"}
-          alt="banner proceso"
-        />
-        <div className="absolute inset-0 opacity-15 rounded-lg bg-gray-700"></div>
+        <div className="lg:w-1/2">
+          <Image
+            width={1920}
+            height={623}
+            src={"/img/proceso/impacto.jpg"}
+            alt="banner proceso"
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

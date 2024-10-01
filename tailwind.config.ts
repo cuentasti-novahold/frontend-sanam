@@ -7,7 +7,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['"Helvetica Neue Roman"'],
+      'sans': ['"Tomato_Grotesk"', 'system-ui', 'sans-serif'],
+      'custom':['"Tomato_Grotesk"']
     },
     extend: {
       textShadow: {

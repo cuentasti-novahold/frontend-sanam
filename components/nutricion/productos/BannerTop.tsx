@@ -6,30 +6,31 @@ import { useTranslations } from "next-intl";
 export default function BannerTop() {
   const t = useTranslations();
   return (
-    <div className="w-full flex px-10">
-      <div className="w-2/3">
-        <div className="w-full bg-[#cbdcbd] h-3/4 p-14 rounded-tl-3xl flex flex-col justify-center">
-          <h1 className="text-4xl">{t("np-food-naox")}</h1>
+    <div className="relative w-full mb-6 overflow-hidden">
+      <Image
+        className="w-full lg:h-[38.3rem]"
+        width={4000}
+        height={2013}
+        src="/img/nuestros-productos/web_Banner Suproducto.png"
+        alt="banner nutricion y salud humana"
+      />
+      <div className="absolute inset-0 flex md:m-8 lg:m-20 p-10 text-[#FFFFFF]">
+        <div className="flex flex-col justify-center md:w-[30rem] lg:w-[40rem] gap-5">
+          <div className="mt-2">
+            <p className="md:text-2xl lg:text-4xl font-custom font-bold">
+              {t("np-food-naox")}{" "}
+            </p>
+          </div>
+          <div>
+            <NavigationSanam
+              openNew={true}
+              route="https://naoxcolombia.com/"
+              styleDiv="flex justify-center md:p-5 lg:p-6 rounded-3xl bg-[#04AF30]"
+              styleSpan="md:text-2xl lg:text-4xl font-bold uppercase text-[#FFFFFF]"
+              title={t("naox-store")}
+            />
+          </div>
         </div>
-        <NavigationSanam
-          openNew={true}
-          route="https://naoxcolombia.com/"
-          styleDiv="absolute bg-teal-300 p-4 rounded-xl border border-slate-400 hover:border-slate-200 shadow-xl top-1/5 left-1/2 -transform-translate-x-1/5 -translate-y-1/2"
-          styleSpan="text-2xl text-slate-800"
-          title={t("naox-store")}
-        />
-        <div className="w-full bg-[#7e8b6d] h-1/4 p-14 rounded-bl-3xl flex flex-col justify-center">
-          <h1 className=" text-3xl font-bold">{t("replace-drink-sugar")}</h1>
-        </div>
-      </div>
-      <div className="w-1/3">
-        <Image
-          src={"/img/nuestros-productos/banner-top.jpeg"}
-          height={600}
-          width={700}
-          alt="naox"
-          className="rounded-tr-3xl rounded-br-3xl"
-        />
       </div>
     </div>
   );

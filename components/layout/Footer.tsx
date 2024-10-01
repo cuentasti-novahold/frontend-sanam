@@ -1,40 +1,44 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedinIn, FaHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const t = useTranslations();
   const pathname = usePathname();
-  const locale = pathname.split("/")[1]; 
+  const locale = pathname.split("/")[1];
 
   return (
-    <footer className="px-5 lg:px-40 bg-white pt-8 pb-1">
-      <div className="mx-auto flex flex-col lg:flex-row justify-between">
+    <footer className="px-5 lg:px-40 pt-8 pb-1 text-[#6B6B6B] bg-[#FFFFFF]">
+      <div className="flex flex-col lg:flex-row justify-between mx-auto">
         <div className="my-5">
-          <Link className="navbar-brand mr-5" href="/">
-            <Image
-              width={200}
-              height={80}
-              src="/img/logo-sanam.JPG"
-              alt="Logo Sanam"
-            />
-          </Link>
+          <div className="flex flex-col">
+            <Link className="navbar-brand mr-5" href="/">
+              <Image
+                width={200}
+                height={80}
+                src="/img/logo-sanam.JPG"
+                alt="Logo Sanam"
+              />
+            </Link>
+          </div>
           <p className="font-bold my-2 text-lg">
-            {t("the")} <span className="sanam-green">{t("r-evolution")}</span>{" "}
-            {t("for")} {t("coffe")}
+            {t("the")} <span className="">{t("r-evolution")}</span> {t("for")}{" "}
+            {t("coffe")}
           </p>
-          <div className="flex items-center mt-1">
+          <div className="flex items-center mt-1 gap-2">
             <Link
               href="https://www.facebook.com/sanadores-ambientales"
               passHref
               target="_blank"
             >
-              <FaFacebook
-                className="text-blue-600 mr-4 cursor-pointer"
-                style={{ fontSize: "26px" }}
+              <Image
+                width={26}
+                height={26}
+                src={"/img/inicio/icons/web_facebook.png"}
+                alt="facebook"
               />
             </Link>
             <Link
@@ -42,9 +46,11 @@ export default function Footer() {
               passHref
               target="_blank"
             >
-              <FaInstagram
-                className="text-pink-600 mr-4 cursor-pointer"
-                style={{ fontSize: "26px" }}
+              <Image
+                width={26}
+                height={26}
+                src={"/img/inicio/icons/web_instagram.png"}
+                alt="instagram"
               />
             </Link>
             <Link
@@ -52,21 +58,25 @@ export default function Footer() {
               passHref
               target="_blank"
             >
-              <FaLinkedinIn
-                className="text-blue-600 mr-4 cursor-pointer"
-                style={{ fontSize: "26px" }}
+              <Image
+                width={26}
+                height={26}
+                src={"/img/inicio/icons/web_linkedin.png"}
+                alt="linkedin"
               />
             </Link>
           </div>
         </div>
+
         <div className="my-5">
           <h2 className="font-bold text-2xl">{t("company")}</h2>
           <ul className="justify-center">
             <li className="">
-              <Link href={`/${locale}/proceso`}>{t("process")}</Link>
+              <Link href={`/${locale}/proceso`}>{t('our-two')} {t("process")}</Link>
             </li>
           </ul>
         </div>
+
         <div className="my-5">
           <h2 className="font-bold text-2xl">{t("industries")}</h2>
           <ul className="justify-center">
@@ -74,13 +84,17 @@ export default function Footer() {
               <Link href={`/${locale}/agricultura`}>{t("agriculture")}</Link>
             </li>
             <li className="">
-              <Link href={`/${locale}/nutricion`}> {t("nutrition")} {t('and')} {t('human-health')} </Link>
+              <Link href={`/${locale}/nutricion`}>
+                {" "}
+                {t("nutrition")} {t("and")} {t("human-health")}{" "}
+              </Link>
             </li>
             <li className="">
               <Link href={`/${locale}/cuidado-personal`}>{t("care")}</Link>
             </li>
           </ul>
         </div>
+
         <div className="my-5">
           <h2 className="font-bold text-2xl">{t("blog")}</h2>
           <ul className="justify-center">
@@ -90,10 +104,11 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="w-full text-center flex items-center justify-center">
+
+      <div className="w-full text-center flex items-center justify-center mb-3">
         <p className="inline-block">
           {t("made")} {t("with")}{" "}
-          <FaHeart className="text-red-700 inline-block" /> {t("by")}{" "}
+          <FaHeart className="text-blue-700 inline-block" /> {t("by")}{" "}
           <Link
             href="https://google.com/search?q=novahold.com"
             target="_blank"

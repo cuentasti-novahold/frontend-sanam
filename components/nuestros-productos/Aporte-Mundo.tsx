@@ -12,10 +12,10 @@ export default function AporteMundo({ cardContent }: AporteMundoProps) {
 
   return (
     <div className="p-10">
-      <h1 className="text-6xl font-bold sanam-green px-16 py-4 ">
+      <h1 className="text-2xl mb-5 lg:px-16 font-bold">
         {t("our-contribution")}
       </h1>
-      <div className="lg:w-full flex gap-2">
+      <div className="lg:w-full flex flex-col md:flex-row lg:flex-row gap-2">
         {cardContent.map((card, index) => (
           <ImagenOverlay
             key={index}

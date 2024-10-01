@@ -21,19 +21,11 @@ export default function OurImpact() {
   }, []);
 
   return (
-    <div
-      className="xl:flex p-2 xl:p-10 xl:items-center xl:justify-center bg-[#3e742962] xl:min-h-screen"
-      data-aos="fade-right"
-    >
-      <div className="flex-1 w-34 m-3 xl:m-0">
-        <div className="flex items-center justify-center xl:justify-between">
-          <h1 className="uppercase text-3xl xl:text-4xl font-semibold mt-4 xl:mt-0 ">
-            {t("our-impact")}
-          </h1>
-        </div>
-
-        <div className="p-5 xl:p-0 xl:mt-[1rem] xl:mr-8">
-          <p className="text-xl xl:text-2xl text-justify text-[#3b4146]">
+    <>
+      <div className="flex flex-col lg:flex-row w-full bg-[#6C7F7D]/20"  data-aos="fade-right">
+        <div className="flex flex-col justify-center lg:w-1/2 p-20">
+          <h1 className="text-xl font-bold uppercase"> {t("our-impact")}</h1>
+          <p className="text-lg">
             {p_impact_parts.map((part, index) => (
               <React.Fragment key={index}>
                 {part}
@@ -42,18 +34,17 @@ export default function OurImpact() {
             ))}
           </p>
         </div>
-      </div>
 
-      <div className="relative xl:flex flex-1 w-76 m-3 xl:items-center xl:justify-center h-[20rem] xl:h-[33rem]">
-        <Image
-          className="rounded-lg"
-          layout="fill"
-          objectFit="cover"
-          src={"/img/proceso/nuestro-impacto.jpg"}
-          alt="banner proceso"
-        />
-        <div className="absolute inset-0 opacity-15 rounded-lg bg-gray-700"></div>
+        <div className="lg:w-1/2">
+          <Image
+            width={2000}
+            height={1298}
+            src={"/img/proceso/nuestro_impacto.png"}
+            alt="banner proceso"
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
+

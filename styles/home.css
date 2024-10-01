@@ -1,12 +1,12 @@
-/* styles/banner-section.css */
-
 .banner-image {
-    /* background-image: url('https://via.placeholder.com/1920x1080/?coffee,coffee-beans,coffee-farmers');
-    background-size: cover;
-    background-position: center; */
-    /* background-image: url('https://via.placeholder.com/1920x1080/?campos de cafe,cultivos de cafe'); */
     background-image: url('/img/inicio/banner-principal.jpg');
     background-size: cover;
-    background-position: center;
-    /* background-color: #757c7d; */
+    background-position: top center;
+    height: 115vh;
+}
+
+@media (max-width: 768px) {
+    .banner-image {
+        height: 65vh;
+    }
 }

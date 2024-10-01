@@ -1,22 +1,21 @@
-import Image from 'next/image'
-import React from 'react'
+import React from "react";
 import { useTranslations } from "next-intl";
 
 export default function Patente() {
-    const t = useTranslations();
-    return (
-        <div className='w-full py-10'>
-            <h1 className="w-full text-6xl p-5 font-bold">{t("patent")}</h1>
-            <div className="w-full flex">
-                <div className="w-full lg:w-1/2">
-                    <Image src={'/img/inicio/patente-inicio.jpg'} width={800} height={540} alt='planta de cafe' />
-                </div>
-                <div className="w-full lg:w-1/2 flex justify-center items-center">
-                    <h1 className="text-5xl font-bold p-10">
-                        {t("home-patent")}
-                    </h1>
-                </div>
-            </div>
-        </div>
-    )
+  const t = useTranslations();
+  return (
+    <div className="flex flex-col justify-center items-center md:flex-row w-full mt-[1rem] md:mt-0">
+      <div className="flex justify-center items-center w-full md:w-3/5">
+        <img
+          src="/img/inicio/patente-inicio.jpg"
+          alt="planta de cafe"
+          className="md:w-full md:h-[35rem] object-cover"
+        />
+      </div>
+      <div className="flex flex-col justify-center items-center w-full md:w-2/5 md:h-[35rem] p-5 text-[#FFFFFF] bg-[#6C7F7D]">
+        <h1 className="w-full text-4xl px-10 font-bold">{t("patent")}</h1>
+        <p className="text-3xl font-bold px-10">{t("home-patent")}</p>
+      </div>
+    </div>
+  );
 }

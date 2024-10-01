@@ -49,5 +49,5 @@ export default function SlideProductos() {
       icon: <GiFruitBowl size={80} />,
     },
   ];
-  return <SlideImagenes slideContent={slideContent} />;
+  return <SlideImagenes /* slideContent={slideContent} */ />;
 }

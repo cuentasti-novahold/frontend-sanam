@@ -1,27 +1,39 @@
 import React from "react";
-import { FaGears, FaHouseSignal } from "react-icons/fa6";
+import Image from "next/image";
+import QuieresDistribuir from "./QuieresDistribuir";
 import { useTranslations } from "next-intl";
 
 export default function SeccionFour() {
   const t = useTranslations();
   return (
-    <div className="bg-slate-50 py-10">
-      <div className="w-full text-center">
-        <p className="lg:text-5xl font-bold uppercase">{t("we-promote")}</p>
+    <div className="lg:flex lg:flex-row  w-full my-8">
+      <div className="flex flex-col justify-center w-full h-[22rem] gap-4 bg-[#6C7F7D]/10">
+        <h1 className="text-xl text-left mx-14 md:mx-[12rem] font-bold">
+          {t("we-promote")}
+        </h1>
+
+        <div className="flex flex-row justify-center items-center pr-5 mx-16">
+          <Image
+            width={120}
+            height={120}
+            src="/img/agricultura/icons/web_agricultura.png"
+            alt="agricultura sostenible"
+          />
+          <p className="ml-3 text-lg"> {t("ag-sustainable")}</p>
+        </div>
+        <div className="flex flex-row justify-center items-center mx-16">
+          <Image
+            width={120}
+            height={120}
+            src="/img/agricultura/icons/web_recuperacion.png"
+            alt="agricultura sostenible"
+          />
+          <p className="ml-3 text-lg"> {t("recoring-soils")}</p>
+        </div>
       </div>
-      <div className="w-full lg:flex lg:px-96 py-10 gap-5 justify-center items-center">
-        <div className="lg:w-1/2 flex flex-col items-center justify-center gap-10">
-          <FaGears size={150} className="sanam-green" />
-          <p className="uppercase shadow-md p-5 rounded-xl shadow-green-700 text-center">
-          {t("ag-sustainable")}
-          </p>
-        </div>
-        <div className="lg:w-1/2 flex flex-col items-center justify-center gap-10">
-          <FaHouseSignal size={150} className="sanam-green" />
-          <p className="uppercase shadow-md p-5 rounded-xl shadow-green-700 text-center">
-            {t("recoring-soils")}
-          </p>
-        </div>
+
+      <div className="flex justify-center items-center w-full h-[22rem] shadow-md bg-[#6C7F7D]/40">
+        <QuieresDistribuir disposicion="columna"/>
       </div>
     </div>
   );

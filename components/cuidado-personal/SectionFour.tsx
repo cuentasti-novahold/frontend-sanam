@@ -136,8 +136,6 @@ export default function SectionFour() {
           yAxes: [
             {
               ticks: {
-                /* beginAtZero: true,
-                precision: 1, */
                 beginAtZero: true,
                 // Opcional: Especifica un stepSize si quieres controlar el intervalo entre ticks
                 stepSize: 4,
@@ -237,7 +235,7 @@ export default function SectionFour() {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2 m-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8 p-6 bg-[#6C7F7D]/20">
         {/*Grafica uno*/}
         <div className="flex flex-col m-2 rounded break-words shadow-lg bg-white">
           <div className="flex rounded-t m-1 px-6 py-6 bg-transparent">
@@ -257,7 +255,7 @@ export default function SectionFour() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center p-1 m-3 rounded-3xl bg-amber-900">
+          <div className="flex items-center justify-center p-1 m-3 rounded-3xl bg-amber-900 ">
             <p className="text-center text-white font-bold">
               {t("+89")} {t("vs")} {t("retinol")} <br />
               {t("+58")} {t("vs")} {t("coq")}
@@ -267,7 +265,7 @@ export default function SectionFour() {
 
         {/*Grafica dos*/}
         <div className="flex flex-col m-2 rounded relative break-words shadow-lg bg-white">
-          <div className="flex rounded-t m-1 px-6 py-3 bg-transparent">
+          <div className="flex rounded-t m-1 px-6 py-6 bg-transparent">
             <div className="flex flex-wrap">
               <div className="flex-grow flex-1 relative w-full max-w-full">
                 <h2 className="text-center mb-2 text-xl font-semibold uppercase">
@@ -280,7 +278,7 @@ export default function SectionFour() {
             </div>
           </div>
 
-          <div className="p-4 mx-1 py-5">
+          <div className="p-4 mx-1 py-5 ">
             <div className="relative h-350-px">
               <canvas id="bar-chart-2" ref={graph_two}></canvas>
             </div>
