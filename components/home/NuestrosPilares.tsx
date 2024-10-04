@@ -8,7 +8,7 @@ export default function NuestrosPilares() {
     <div className="flex flex-col md:flex-row justify-center items-center my-10">
       <div className="relative">
         <Image
-          src="/img/inicio/imagenes/web_experiencia.png"
+          src="/img/inicio/web_experiencia.png"
           alt="experiencia"
           width={400}
           height={700}
@@ -24,7 +24,7 @@ export default function NuestrosPilares() {
 
       <div className="relative">
         <Image
-          src="/img/inicio/imagenes/web_tecnologia.png"
+          src="/img/inicio/web_tecnologia.png"
           alt="tecnologia"
           width={400}
           height={700}
@@ -38,7 +38,7 @@ export default function NuestrosPilares() {
 
       <div className="relative">
         <Image
-          src="/img/inicio/imagenes/web_innovacion.png"
+          src="/img/inicio/web_innovacion.png"
           alt="innovacion"
           width={400}
           height={700}
