@@ -22,7 +22,7 @@ export default function OurImpact() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row w-full bg-[#6C7F7D]/20"  data-aos="fade-right">
+      <div className="flex flex-col lg:flex-row w-full bg-[#6C7F7D]/20" data-aos="fade-right">
         <div className="flex flex-col justify-center lg:w-1/2 p-20">
           <h1 className="text-xl font-bold uppercase"> {t("our-impact")}</h1>
           <p className="text-lg">

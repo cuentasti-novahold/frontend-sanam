@@ -19,9 +19,9 @@ function Proceso() {
       <div>
         <SectionFour />
       </div>
-     { <div className="py-8 bg-[#6C7F7D]/20">
-        <SectionFive/>
-      </div>}
+      <div className="py-8 bg-[#6C7F7D]/20">
+        <SectionFive />
+      </div>
     </>
   );
 }

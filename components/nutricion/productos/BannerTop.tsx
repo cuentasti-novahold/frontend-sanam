@@ -6,9 +6,9 @@ import { useTranslations } from "next-intl";
 export default function BannerTop() {
   const t = useTranslations();
   return (
-    <div className="relative w-full mb-6 overflow-hidden">
+    <div className="relative w-full mb-2 overflow-hidden">
       <Image
-        className="w-full lg:h-[38.3rem]"
+        className="w-full lg:h-[40rem]"
         width={4000}
         height={2013}
         src="/img/nuestros-productos/web_Banner Suproducto.png"
@@ -17,7 +17,7 @@ export default function BannerTop() {
       <div className="absolute inset-0 flex md:m-8 lg:m-20 p-10 text-[#FFFFFF]">
         <div className="flex flex-col justify-center md:w-[30rem] lg:w-[40rem] gap-5">
           <div className="mt-2">
-            <p className="md:text-2xl lg:text-4xl font-custom font-bold">
+            <p className="md:text-2xl lg:text-3xl font-custom font-bold">
               {t("np-food-naox")}{" "}
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function BannerTop() {
             <NavigationSanam
               openNew={true}
               route="https://naoxcolombia.com/"
-              styleDiv="flex justify-center md:p-5 lg:p-6 rounded-3xl bg-[#04AF30]"
+              styleDiv="flex justify-center md:p-5 lg:p-4 rounded-3xl bg-[#04AF30]"
               styleSpan="md:text-2xl lg:text-4xl font-bold uppercase text-[#FFFFFF]"
               title={t("naox-store")}
             />

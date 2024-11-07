@@ -12,7 +12,7 @@ export default function Banderas() {
           {t("our")} {t("presence")}
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center mt-5 md:space-x-[arem] 2xl:space-x-32">
+      <div className="flex flex-col md:flex-row justify-center items-center mt-5 md:space-x-[6rem] 2xl:space-x-32">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <Image
             src="/img/web_colombia.png"
@@ -36,6 +36,7 @@ export default function Banderas() {
           />
           <div className="m-5 w-[12rem]">
             <h1 className="text-2xl font-bold">{t("costa-rica")}</h1>
+            <p>{t("home-presence")}</p>
           </div>
         </div>
       </div>

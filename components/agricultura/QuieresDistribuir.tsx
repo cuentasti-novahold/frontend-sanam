@@ -26,15 +26,7 @@ export default function QuieresDistribuir({
           href={`/${locale}/contacto`}
         >
           <span className="text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
-            {t("distribute")}
-          </span>
-        </Link>
-        <Link
-          className="group flex flex-col items-center text-center p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
-          href="/nuestros-productos/terax/distribuidores"
-        >
-          <span className="text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
-            {t("our-distributors")}
+            {t("contact-us")}
           </span>
         </Link>
       </div>
@@ -43,19 +35,11 @@ export default function QuieresDistribuir({
     return (
       <div className="flex flex-col md:flex-row justify-center w-full p-5 lg:px-20 gap-10">
         <Link
-          className="group flex flex-col justify-center items-center text-center md:w-[20rem] lg:w-[30rem] p-5 lg:p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
+          className="group flex flex-col items-center text-center w-1/2 p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
           href={`/${locale}/contacto`}
         >
-          <span className="text-xl lg:text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
-            {t("distribute")}
-          </span>
-        </Link>
-        <Link
-          className="group flex flex-col justify-center items-center text-center md:w-[20rem] lg:w-[30rem]  p-5 lg:p-6 rounded-3xl shadow-lg ease-in-out bg-[#04AF30] hover:bg-[#6C7F7D]/10 transition duration-300"
-          href="/nuestros-productos/terax/distribuidores"
-        >
-          <span className="text-xl lg:text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
-            {t("our-distributors")}
+          <span className="text-3xl font-bold text-[#FFFFFF] group-hover:text-[#6B6B6B] transition duration-300">
+            {t("contact-us")}
           </span>
         </Link>
       </div>

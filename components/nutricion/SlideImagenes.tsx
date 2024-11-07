@@ -24,7 +24,7 @@ export default function SlideImagenes() {
             <div className="relative w-full h-full">
               <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
               <Image
-                alt="foto de prueba"
+                alt="Deporte"
                 src="/img/nutricion-humana/web_contenedor2.png"
                 layout="fill"
                 objectFit="cover"
@@ -47,8 +47,8 @@ export default function SlideImagenes() {
             <div className="relative w-full h-full">
               <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
               <Image
-                alt="foto de prueba"
-                src="/img/nutricion-humana/carrusel-trabajo.jpg"
+                alt="Oficina"
+                src="/img/nutricion-humana/carrusel sanam_office.png"
                 layout="fill"
                 objectFit="cover"
                 className="w-full h-full"
@@ -70,8 +70,8 @@ export default function SlideImagenes() {
             <div className="relative w-full h-full">
               <div className="absolute inset-0 opacity-30 z-20 bg-black"></div>s
               <Image
-                alt="foto de prueba"
-                src="/img/nutricion-humana/carrusel-cocina.jpg"
+                alt="Hogar"
+                src="/img/nutricion-humana/carrusel sanam_home.png"
                 layout="fill"
                 objectFit="cover"
                 className="w-full h-full"
@@ -93,8 +93,8 @@ export default function SlideImagenes() {
             <div className="relative w-full h-full">
               <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
               <Image
-                alt="foto de prueba"
-                src="/img/nutricion-humana/carrusel-niños.jpg"
+                alt="Niños"
+                src="/img/nutricion-humana/carrusel sanam_students.png"
                 layout="fill"
                 objectFit="cover"
                 className="w-full h-full"
@@ -116,8 +116,8 @@ export default function SlideImagenes() {
             <div className="relative w-full h-full">
               <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
               <Image
-                alt="foto de prueba"
-                src="/img/nutricion-humana/carrusel-bebidas.jpg"
+                alt="Restaurante"
+                src="/img/nutricion-humana/carrusel sanam_restaurant.png"
                 layout="fill"
                 objectFit="cover"
                 className="w-full h-full"

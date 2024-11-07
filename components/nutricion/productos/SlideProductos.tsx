@@ -1,53 +1,107 @@
-import React from "react";
-import SlideImagenes from "../SlideImagenes";
-import { ISlideContent } from "@/types/SlideContent";
-import { GiFruitBowl } from "react-icons/gi";
+"use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "/styles/carrusel.css";
 
-const images = [
-  { text: "" },
-  { text: "" },
-  {
-    text: "Es la primera bebida diseñada para ayudar a prevenir la formación de cálculos urinarios. La combinación de las dosis adecuadas de sales de citrato con fruta de café, hacen que se eviten la formación de los cristales productores de los cálculos",
-  },
-  {
-    text: "Producto nutracéutico codesarrollado con la Fundación Cardiovascular de Colombia, que mejora la función y estructura muscular esquelética y respiratoria en humanos.",
-  },
-];
 
 export default function SlideProductos() {
   const t = useTranslations();
+  return (<>
+    <div className="relative w-full overflow-hidden z-10">
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        className="flex justify-center items-center h-screen md:h-[40rem] 2xl:h-screen"
+      >
+        <SwiperSlide className="flex justify-center items-center w-full h-full">
+          <div className="relative w-full h-full">
+            <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
+            <Image
+              alt="naox"
+              src="/img/nuestros-productos/naox.png"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+            <div className="absolute inset-0 flex justify-start items-center md:m-12 text-[#FFFFFF] z-20">
+              <div className="flex flex-col justify-center items-center m-5 p-2 md:m-0 md:p-0 md:w-[40rem]">
+                <h1 className="text-md md:text-2xl lg:text-5xl md:px-10 md:py-4 font-custom font-bold">
+                  {t("coffe-fruit") + " " + t("np-perfect-anywhere")}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
 
-  const slideContent: ISlideContent[] = [
-    {
-      background: "url(/img/nuestros-productos/naox.png)",
-      color: "#f00a0a",
-      title: "",
-      subtitle: t("coffe-fruit") + " " + t("np-perfect-anywhere"),
-      icon: <GiFruitBowl size={80} />,
-    },
-    {
-      background: "url(/img/nuestros-productos/naox-vital.png)",
-      color: "#084930",
-      title: "",
-      subtitle:
-        t("coffe-fruit") + " " + t("in") + " " + t("np-four-ingredients"),
-      icon: <GiFruitBowl size={80} />,
-    },
-    {
-      background: "url(/img/nuestros-productos/naox-stone.png)",
-      color: "#8a9216",
-      title: "",
-      subtitle: t("np-drink-designed-prevent"),
-      icon: <GiFruitBowl size={80} />,
-    },
-    {
-      background: "url(/img/nuestros-productos/naox-life.png)",
-      color: "#463a8d",
-      title: "",
-      subtitle: t("np-product-developed-cardiovascular"),
-      icon: <GiFruitBowl size={80} />,
-    },
-  ];
-  return <SlideImagenes /* slideContent={slideContent} */ />;
+        <SwiperSlide className="flex justify-center items-center w-full h-full">
+          <div className="relative w-full h-full">
+            <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
+            <Image
+              alt="naox-vital"
+              src="/img/nuestros-productos/naox-vital.png"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+            <div className="absolute inset-0 flex justify-start items-center md:m-12 text-[#FFFFFF] z-20">
+              <div className="flex flex-col justify-center items-center m-5 p-2 md:m-0 md:p-0 md:w-[40rem]">
+                <h1 className="text-md md:text-2xl lg:text-3xl md:px-10 md:py-4 font-custom font-bold">
+                  {t("coffe-fruit") + " " + t("in") + " " + t("np-four-ingredients")}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="flex justify-center items-center w-full h-full">
+          <div className="relative w-full h-full">
+            <div className="absolute inset-0 opacity-30 z-20 bg-black"></div>s
+            <Image
+              alt="naox-stone"
+              src="/img/nuestros-productos/naox-stone.png"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+            <div className="absolute inset-0 flex justify-start items-center md:m-12 z-20 text-[#FFFFFF]">
+              <div className="flex flex-col justify-center m-5 p-2 md:m-0 md:p-0 md:w-[40rem]">
+                <h1 className="text-md md:text-2xl lg:text-3xl md:px-10 md:py-4 font-custom font-bold">
+                  {t("np-drink-designed-prevent")}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="flex justify-center items-center w-full h-full">
+          <div className="relative w-full h-full">
+            <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
+            <Image
+              alt="naox-life"
+              src="/img/nuestros-productos/naox-life.png"
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+            <div className="absolute inset-0 flex justify-start items-center md:m-12 z-20 text-[#FFFFFF]">
+              <div className="flex flex-col justify-center m-5 p-2 md:m-0 md:p-0 md:w-[40rem]">
+                <h1 className="text-md md:text-2xl lg:text-3xl md:px-10 md:py-4 font-custom font-bold">
+                  {t("np-product-developed-cardiovascular")}
+                </h1>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+      </Swiper>
+    </div>
+  </>)
+
+
 }

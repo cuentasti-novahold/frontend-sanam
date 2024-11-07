@@ -12,11 +12,13 @@ export default function SectionSix() {
       </div>
 
       <div className="md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 justify-center items-center px-14">
-        <div className="flex justify-center tems-center m-5 h-[10rem] rounded-2xl bg-[#6C7F7D]/20">
+
+        <div className="flex justify-center items-center m-5 h-[10rem] rounded-2xl bg-[#6C7F7D]/20">
           <h1 className="text-center text-xl sm:text-xl md:text-xl font-bold p-5">
             {t("coffe-sustainable")}
           </h1>
         </div>
+
         <div className="flex justify-center items-center m-5 h-[10rem] rounded-2xl bg-[#6C7F7D]/20">
           <h1 className="text-center text-xl sm:text-xl md:text-xl font-bold p-5">
             {t("100-integrity")}

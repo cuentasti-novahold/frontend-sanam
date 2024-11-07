@@ -14,8 +14,8 @@ export default function SectionTwo() {
             alt="concetrado de cafe"
           />
         </div>
-        <div className="flex justify-center items-center w-full bg-[#6C7F7D]/20">
-          <p className="text-base md:text-md lg:text-3xl font-bold p-10 lg:w-[40rem]">
+        <div className="flex justify-center items-center lg:w-full 2xl:w-[168rem] bg-[#6C7F7D]/20">
+          <p className="text-base md:text-md lg:text-3xl 2xl:text-4xl font-bold p-10 lg:w-[40rem] 2xl:w-[60rem]">
             {t("cp-process-naox")}
           </p>
         </div>

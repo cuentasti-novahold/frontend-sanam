@@ -6,51 +6,51 @@ import { useTranslations } from "next-intl";
 const flagImages = [
   {
     country: "Australia",
-    url: "https://cdn.pixabay.com/photo/2013/07/13/14/14/australia-162232_1280.png",
+    url: "/img/inicio/banderas/banderas web sanam_aus.png",
   },
   {
     country: "China",
-    url: "https://cdn.pixabay.com/photo/2013/07/13/14/16/china-162389_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_chi.png",
   },
   {
     country: "Ecuador",
-    url: "https://cdn.pixabay.com/photo/2012/04/10/23/23/ecuador-26986_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_ecu.png",
   },
   {
     country: "España",
-    url: "https://cdn.pixabay.com/photo/2013/07/13/14/17/spain-162428_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_esp.png",
   },
   {
     country: "Estados Unidos",
-    url: "https://cdn.pixabay.com/photo/2017/02/06/15/09/american-flag-2043285_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_eua.png",
   },
   {
     country: "Holanda",
-    url: "https://cdn.pixabay.com/photo/2013/07/13/12/51/holland-160486_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_hol.png",
   },
   {
     country: "Israel",
-    url: "https://cdn.pixabay.com/photo/2013/07/13/14/15/israel-162325_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_isr.png",
   },
   {
     country: "Japón",
-    url: "https://cdn.pixabay.com/photo/2013/07/13/14/15/japan-162328_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_jap.png",
   },
   {
     country: "Panamá",
-    url: "https://cdn.pixabay.com/photo/2012/04/10/23/26/panama-26998_640.png",
+    url: "/img/inicio/banderas/banderas web sanam_pan.png",
   },
   {
     country: "Reino Unido",
-    url: "https://cdn.pixabay.com/photo/2015/11/06/13/29/union-jack-1027898_640.jpg",
+    url: "/img/inicio/banderas/banderas web sanam_RU.png",
   },
   {
     country: "México",
-    url: "https://cdn.pixabay.com/photo/2012/04/10/23/24/mexico-26989_1280.png",
+    url: "/img/inicio/banderas/banderas web sanam_mex.png",
   },
   {
     country: "Brasil",
-    url: "https://cdn.pixabay.com/photo/2014/04/02/11/12/brazil-305531_1280.png",
+    url: "/img/inicio/banderas/banderas web sanam_bra.png",
   },
 ];
 
@@ -81,8 +81,8 @@ export default function PresenciaBanderas() {
 
   return (
     <>
-      <div className="mt-5 px-2 lg:px-40 xl:px-40 w-full">
-        <h1 className="text-4xl font-bold mt-2">{t("our-products")}</h1>
+      <div className="mt-8 px-2 lg:px-40 xl:px-40 w-full">
+        <h1 className="text-4xl font-bold my-6">{t("our-products")}</h1>
       </div>
       <div className="flex justify-center items-center w-full py-3">
         <div
@@ -100,7 +100,7 @@ export default function PresenciaBanderas() {
                 alt={`Bandera de ${flag.country}`}
                 width={250}
                 height={150}
-                className="object-contain rounded-lg shadow-xl mb-4"
+                className="object-contain rounded-2xl shadow-xl mb-4"
               />
               <p className="text-center mt-2 font-bold text-2xl">
                 {flag.country}
