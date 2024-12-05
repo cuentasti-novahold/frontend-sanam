@@ -18,7 +18,7 @@ export default function ImpactPlanet() {
         data-aos="fade-right"
       >
         <div className="flex flex-col justify-center lg:w-1/2 py-3 px-20">
-          <h1 className="text-xl font-bold uppercase"> {t("our-impact")}</h1>
+          <h1 className="text-xl font-bold uppercase"> {t("impact-planet")}</h1>
           <p className="text-lg">
             {p_impact_planet_parts.map((part, index) => (
               <React.Fragment key={index}>

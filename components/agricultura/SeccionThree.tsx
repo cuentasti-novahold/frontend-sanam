@@ -21,7 +21,7 @@ export default function SeccionThree() {
         <div className="lg:flex lg:flex-col justify-center items-center lg:w-1/2">
           <div className="space-y-4">
             <p className="text-xl lg:text-2xl px-4 font-bold">
-              {t("our-advantages")}
+              {t("our-biostimulant")}
             </p>
             {/* Alineación vertical con espacio entre elementos */}
             {items.map((item, index) => (
@@ -39,7 +39,7 @@ export default function SeccionThree() {
             {t("ag-ton")}
             <span className="text-3xl lg:text-5xl font-bold text-[#04AF30]">
               {" "}
-              {t("terax")}
+              {t("biostimulant")}
             </span>
           </h1>
 

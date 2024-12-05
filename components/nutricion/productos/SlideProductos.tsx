@@ -84,7 +84,7 @@ export default function SlideProductos() {
             <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
             <Image
               alt="naox-life"
-              src="/img/nuestros-productos/naox-life.png"
+              src="/img/nuestros-productos/maxlife.jpg"
               layout="fill"
               objectFit="cover"
               className="w-full h-full"

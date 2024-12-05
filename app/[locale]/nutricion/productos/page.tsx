@@ -5,6 +5,7 @@ import SlideProductos from "@/components/nutricion/productos/SlideProductos";
 import QuieresDistribuir from "@/components/agricultura/QuieresDistribuir";
 import { ICardContent } from "@/types/CardContent";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Productos() {
   const t = useTranslations();
@@ -13,7 +14,9 @@ export default function Productos() {
       imgUrl: "/img/nuestros-productos/web_Alimento.png",
       alt: "SUPERALIMENTO",
       textOverlay: t("superfood"),
-      description: t("np-webmd-labels"),
+      linkText: "WebMD.com",
+      description:  t("np-webmd-labels"),
+      linkUrl: "https://www.webmd.com/diet/what-to-know-about-coffee-fruit",
     },
     {
       imgUrl: "/img/nuestros-productos/web_Agricultores.png",

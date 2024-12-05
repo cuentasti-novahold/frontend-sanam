@@ -20,7 +20,7 @@ export default function SectionFive() {
           <div className="max-w-sm">
             <div className="overflow-hidden">
               <Image
-                src="/img/cuidado-personal/pendiente.png"
+                src="/img/cuidado-personal/nuestras-formulas/web_Serum.svg"
                 alt="Serum Antioxidante"
                 width={300}
                 height={200}
@@ -40,7 +40,7 @@ export default function SectionFive() {
           <div className="max-w-sm">
             <div className="overflow-hidden">
               <Image
-                src="/img/cuidado-personal/pendiente.png"
+                src="/img/cuidado-personal/nuestras-formulas/web_Gel.png"
                 alt="Gel limpiador"
                 width={300}
                 height={200}
@@ -58,7 +58,7 @@ export default function SectionFive() {
           <div className="max-w-sm">
             <div className="overflow-hidden">
               <Image
-                src="/img/cuidado-personal/pendiente.png"
+                src="/img/cuidado-personal/nuestras-formulas/web_mascarilla.svg"
                 alt="Mascarilla"
                 width={300}
                 height={200}
@@ -76,7 +76,7 @@ export default function SectionFive() {
           <div className="max-w-sm">
             <div className="overflow-hidden">
               <Image
-                src="/img/cuidado-personal/pendiente.png"
+                src="/img/cuidado-personal/nuestras-formulas/web_jabon.png"
                 alt="Jabon"
                 width={300}
                 height={100}
@@ -96,7 +96,7 @@ export default function SectionFive() {
           <div className="max-w-sm">
             <div className="overflow-hidden">
               <Image
-                src="/img/cuidado-personal/pendiente.png"
+                src="/img/cuidado-personal/nuestras-formulas/web_removedor.png"
                 alt="Removedor"
                 width={300}
                 height={200}

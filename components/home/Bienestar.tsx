@@ -15,10 +15,10 @@ export default function Bienestar() {
   const handleFlip3 = () => setFlipped3(!flipped3);
 
   return (
-    <section className="flex flex-wrap justify-center items-center text-center py-[3rem] gap-x-12">
+    <section className="flex flex-wrap justify-center items-center text-center py-[3rem] gap-x-8">
       <div className="w-full p-2">
         <p className="text-2xl font-bold">
-          {t("home-impact")} {t("coffe-fruit")}
+          {t("home-impact")} {t("coffe-fruit-minuscula")}
         </p>
       </div>
       {/* CARD 1 */}

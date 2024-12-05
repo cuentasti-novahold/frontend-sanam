@@ -32,6 +32,7 @@ export default function Nutricion() {
       <div>
         <ProductosNaox />
       </div>
+      
       <div className="flex justify-center items-center w-full h-full lg:h-[10rem] shadow-md">
         <QuieresDistribuir disposicion="fila" />
       </div>

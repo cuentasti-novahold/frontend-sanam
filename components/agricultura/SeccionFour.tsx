@@ -12,28 +12,30 @@ export default function SeccionFour() {
           {t("we-promote")}
         </h1>
 
-        <div className="flex flex-row justify-center items-center pr-5 mx-16">
+        <div className="flex flex-col lg:flex-row justify-center items-center pr-5 mx-16 ">
           <Image
             width={120}
             height={120}
             src="/img/agricultura/icons/web_agricultura.png"
             alt="agricultura sostenible"
+            className="lg:ml-32"
           />
-          <p className="ml-3 text-lg"> {t("ag-sustainable")}</p>
+          <p className="lg:ml-3 text-lg text-center w-full"> {t("ag-sustainable")}</p>
         </div>
-        <div className="flex flex-row justify-center items-center mx-16">
+        <div className=" flex flex-col lg:flex-row justify-center items-center mx-16">
           <Image
             width={120}
             height={120}
             src="/img/agricultura/icons/web_recuperacion.png"
             alt="agricultura sostenible"
+            className="lg:ml-32"
           />
-          <p className="ml-3 text-lg"> {t("recoring-soils")}</p>
+          <p className="lg:ml-3 text-lg text-center w-full"> {t("recoring-soils")}</p>
         </div>
       </div>
 
       <div className="flex justify-center items-center w-full h-[22rem] shadow-md bg-[#6C7F7D]/40">
-        <QuieresDistribuir disposicion="columna"/>
+        <QuieresDistribuir disposicion="columna" />
       </div>
     </div>
   );

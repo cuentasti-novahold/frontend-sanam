@@ -43,7 +43,7 @@ export default function SaludHumana() {
         <div className="flex flex-col md:flex-row justify-center items-center w-full md:h-[24rem] gap-4 p-5 lg:pr-[8rem] 2xl:pr-[12rem]">
           <div className="flex justify-center md:justify-end w-full h-full">
             <Image
-              alt="Stone"
+              alt="Nutraceutico"
               src="/img/nutricion-humana/icons/web_life.png"
               width={175}
               height={328}
@@ -51,7 +51,7 @@ export default function SaludHumana() {
           </div>
           <div className="w-full h-full">
             <p className="text-lg font-bold text-center md:text-left">
-              {t("life")}
+              {t("nutraceutical")}
             </p>
 
             <p className="lg:text-xl md:mt-2 lg:mt-2 text-center md:text-left">

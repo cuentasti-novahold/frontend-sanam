@@ -20,7 +20,7 @@ export default function BeneficioFruta() {
           {/* Izquierdo */}
           <div className="flex flex-col w-full md:pl-12  2xl:pl-[15rem] space-y-6">
             <h2 className="text-xl font-bold ml-4">
-              {t("benefits")} {t("coffe-juice")}
+              {t("benefits-concentrate")}
             </h2>
             {items_beneficios.map((item, index) => (
               <div key={index} className="flex items-center">

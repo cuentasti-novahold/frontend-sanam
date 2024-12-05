@@ -44,7 +44,7 @@ export default function SeccionOne() {
         <div className="absolute flex justify-start items-center inset-0 m-12 md:font-bold text-white">
           <div className="flex flex-col justify-center items-center w-[30rem]">
             <p className="text-md md:text-2xl lg:text-4xl lg:px-10 py-4">
-              {t("ag-compound")} {t("biostimulant")}, {t("ag-solution")}
+              {t("ag-compound")}
             </p>
 
             <Link href={`/${locale}/contacto`}>
@@ -69,11 +69,8 @@ export default function SeccionOne() {
       <div className="flex flex-col lg:flex-row justify-center text-left w-full lg:h-[30rem]">
         <div className="flex flex-col justify-center items-center md:px-6 h-[10rem] md:h-[30rem] w-full">
           <div className="m-3 md:w-[35rem]">
-            <h1 className="text-xl md:text-5xl font-bold">{t("together")}</h1>
-            <h1 className="text-xl md:text-5xl font-bold">
-              {t("energy-fields")}
-            </h1>
-            <p className="md:text-2xl">{t("ag-nutritional")}</p>
+            <h1 className="text-xl md:text-5xl font-bold">{t("together")} {t("energy-fields")}</h1>
+            <p className="md:text-2xl mt-4">{t("ag-nutritional")}</p>
           </div>
         </div>
 
@@ -87,8 +84,8 @@ export default function SeccionOne() {
             <Image
               width={300}
               height={200}
-              src="/img/agricultura/Botella.jpg"
-              alt="imagen semilla"
+              src="/img/agricultura/Terax.svg"
+              alt="imagen producto"
               className="object-contain"
             />
           </div>

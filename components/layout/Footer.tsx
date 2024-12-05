@@ -72,7 +72,7 @@ export default function Footer() {
           <h2 className="font-bold text-2xl">{t("company")}</h2>
           <ul className="justify-center">
             <li className="">
-              <Link href={`/${locale}/proceso`}>{t('our-two')} {t("process")}</Link>
+              <Link href={`/${locale}/proceso`}>{t('our-two')} {t("contribution")}</Link>
             </li>
           </ul>
         </div>

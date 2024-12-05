@@ -72,7 +72,7 @@ export default function NavbarCustom({
             activeLink === "por definirse" ? "text-green-400" : ""
           }`}
         >
-          {t("our-two")} {t("process")}
+          {t("our-two")} {t("contribution")}
         </Link>
       </div>
 

@@ -18,7 +18,7 @@ export default function ConcentradoBanner() {
         <div className="absolute inset-0 flex justify-start items-center md:m-12 text-[#FFFFFF]">
           <div className="flex flex-col justify-center items-center m-5 p-2 md:m-0 md:p-0 md:w-[40rem]">
             <h1 className="text-md md:text-2xl lg:text-5xl md:px-10 md:py-4 font-custom font-bold">
-              {t("coffe-fruit")} {t("in")} {t("the")} {t("nutrition-industry")}
+              {t("nt-coffe-concentrate")}
             </h1>
 
             <p className="text-sm md:text-2xl lg:text-xl md:px-10 md:py-4">

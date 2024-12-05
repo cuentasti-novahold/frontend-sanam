@@ -22,6 +22,8 @@ export default function AporteMundo({ cardContent }: AporteMundoProps) {
             src={card.imgUrl}
             alt={card.alt}
             textOverlay={card.textOverlay}
+            linkUrl={card.linkUrl}
+            linkText={card.linkText}
             description={card.description}
           />
         ))}

@@ -5,12 +5,28 @@ import { useTranslations } from "next-intl";
 
 const flagImages = [
   {
-    country: "Australia",
-    url: "/img/inicio/banderas/banderas web sanam_aus.png",
+    country: "Estados Unidos",
+    url: "/img/inicio/banderas/banderas web sanam_eua.png",
   },
   {
     country: "China",
     url: "/img/inicio/banderas/banderas web sanam_chi.png",
+  },
+  {
+    country: "Japón",
+    url: "/img/inicio/banderas/banderas web sanam_jap.png",
+  },
+  {
+    country: "Brasil",
+    url: "/img/inicio/banderas/banderas web sanam_bra.png",
+  },
+  {
+    country: "México",
+    url: "/img/inicio/banderas/banderas web sanam_mex.png",
+  },
+  {
+    country: "Australia",
+    url: "/img/inicio/banderas/banderas web sanam_aus.png",
   },
   {
     country: "Ecuador",
@@ -21,20 +37,8 @@ const flagImages = [
     url: "/img/inicio/banderas/banderas web sanam_esp.png",
   },
   {
-    country: "Estados Unidos",
-    url: "/img/inicio/banderas/banderas web sanam_eua.png",
-  },
-  {
     country: "Holanda",
     url: "/img/inicio/banderas/banderas web sanam_hol.png",
-  },
-  {
-    country: "Israel",
-    url: "/img/inicio/banderas/banderas web sanam_isr.png",
-  },
-  {
-    country: "Japón",
-    url: "/img/inicio/banderas/banderas web sanam_jap.png",
   },
   {
     country: "Panamá",
@@ -43,14 +47,6 @@ const flagImages = [
   {
     country: "Reino Unido",
     url: "/img/inicio/banderas/banderas web sanam_RU.png",
-  },
-  {
-    country: "México",
-    url: "/img/inicio/banderas/banderas web sanam_mex.png",
-  },
-  {
-    country: "Brasil",
-    url: "/img/inicio/banderas/banderas web sanam_bra.png",
   },
 ];
 
