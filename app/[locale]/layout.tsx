@@ -11,12 +11,12 @@ import "../globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
 export const metadata: Metadata = {
-  title: "Web Sanam",
-  description: "Realizado por Bik Leek",
+  title: "Sanam",
+  description: "Realizado por Novahold",
   keywords: "Café, Mucilago de café",
-  applicationName: "Sanam.com",
+  applicationName: "Sanam.co",
   robots: { index: true, follow: true },
-  creator: "Bik Leek Team",
+  creator: "Novahold Team",
   category: "Alimentación",
   //icons: { icon: "public/img/logo-sanam.JPG?=4", apple: "public/img/logo-sanam.JPG?=4" , shortcut: "public/img/logo-sanam.JPG?=4"},
   // authors: [{ name: "Novahold", url: "novahold.com" },],

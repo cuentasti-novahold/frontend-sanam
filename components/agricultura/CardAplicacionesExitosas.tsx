@@ -131,9 +131,9 @@ export default function CardAplicacionesExitosas({
   return (
     /*  */
     <div className="w-full  lg:flex lg:items-center">{/* lg:w-1/4 */}
-      <div className="lg:w-1/3 h-full flex justify-center ">{renderIcon()}</div>
+      <div className="lg:w-1/4 flex justify-center">{renderIcon()}</div>
       <div className="lg:w-2/3 h-full lg:flex lg:flex-col lg:justify-start lg:items-start text-center gap-y-5 lg:pl-5 sanam-gray ">
-        <h3 className="font-bold text-2xl w-full text-center lg:text-left ">{name}</h3>
+        <h3 className="font-bold text-2xl w-full text-center lg:text-left">{name}</h3>
         <div className="lg:text-start">{subtitle}</div>
       </div>
     </div>
