@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 
 interface navbarCustomProps {
   activeLink: string;
-  handleClick: (ev: React.MouseEvent<HTMLButtonElement>) => void;
+  /* handleClick: (ev: React.MouseEvent<HTMLButtonElement>) => void; */
+  handleClick: (ev: React.MouseEvent<HTMLElement>) => void;
 }
 
 export default function NavbarCustom({
@@ -29,7 +30,6 @@ export default function NavbarCustom({
         <Link
           href={`/${locale}/agricultura`}
           onClick={handleClick}
-          onClick={(e) => handleClick}
           className={` hover:text-green-400  ${
             activeLink === "agricultura" ? "text-green-400" : ""
           }`}

@@ -14,8 +14,9 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleClick = (event: any) => {
-    setActiveLink(event.target.textContent); // Identifica el enlace activo
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    const target = event.target as HTMLElement;
+    setActiveLink(target.textContent || ""); // Identifica el enlace activo
     setIsMenuOpen(false); // Cierra el menú al hacer clic en un enlace
   };
 
