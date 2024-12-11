@@ -6,7 +6,7 @@ export default function SeccionTwo() {
   const t = useTranslations();
   return (
     <div className="w-full bg-[#6C7F7D]/20 my-6 py-8 space-y-5 p-6">
-      <p className="text-xl lg:text-xl md:mx-44 font-bold">
+      <p className="text-xl lg:text-2xl md:mx-36 font-bold">
         {t("success-stories")}
       </p>
       <div className="lg:flex justify-center space-y-5 md:space-y-0 lg:gap-5 px-5">
