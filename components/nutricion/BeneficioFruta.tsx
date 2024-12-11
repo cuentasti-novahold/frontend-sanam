@@ -54,13 +54,9 @@ export default function BeneficioFruta() {
                 subtitle={""}
               />
               <BeneficiosCMC
-                iconName={"azúcares"}
-                title={t("simple-sugars")}
-                subtitle={
-                  <>
-                    <p className="mt-2 text-xs">{t("glucose-fructose")}</p>
-                  </>
-                }
+                iconName={"energia"}
+                title={t("natural-energy")}
+                subtitle={""}
               />
             </div>
             <div className="flex flex-col md:flex-row gap-3">
@@ -79,6 +75,15 @@ export default function BeneficioFruta() {
                 iconName={"cafeína"}
                 title={t("natural-caffeine")}
                 subtitle={""}
+              />
+              <BeneficiosCMC
+                iconName={"azúcares"}
+                title={t("simple-sugars")}
+                subtitle={
+                  <>
+                    <p className="mt-2 text-xs">{t("glucose-fructose")}</p>
+                  </>
+                }
               />
             </div>
           </div>

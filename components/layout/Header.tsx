@@ -16,6 +16,7 @@ export default function Navbar() {
 
   const handleClick = (event: any) => {
     setActiveLink(event.target.textContent); // Identifica el enlace activo
+    setIsMenuOpen(false); // Cierra el menú al hacer clic en un enlace
   };
 
   return (
@@ -41,7 +42,8 @@ export default function Navbar() {
         {/* Menú móvil */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
-            <FaBars size={40} />
+            {/* <FaBars size={40} /> */}
+            {isMenuOpen ? <FaX size={40} /> : <FaBars size={40} />}
           </button>
         </div>
       </div>

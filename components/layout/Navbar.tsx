@@ -28,6 +28,7 @@ export default function NavbarCustom({
       <div className="p-[1rem]">
         <Link
           href={`/${locale}/agricultura`}
+          onClick={handleClick}
           onClick={(e) => handleClick}
           className={` hover:text-green-400  ${
             activeLink === "agricultura" ? "text-green-400" : ""
@@ -42,6 +43,7 @@ export default function NavbarCustom({
       <div className="p-[1rem]">
         <Link
           href={`/${locale}/nutricion`}
+          onClick={handleClick}
           className={` hover:text-green-400  ${
             activeLink === "nutricion" ? "text-green-400" : ""
           }`}
@@ -55,6 +57,7 @@ export default function NavbarCustom({
       <div className=" p-[1rem]">
         <Link
           href={`/${locale}/cuidado-personal`}
+          onClick={handleClick}
           className={` hover:text-green-400  ${
             activeLink === "cuidado-personal" ? "text-green-400" : ""
           }`}
@@ -68,6 +71,7 @@ export default function NavbarCustom({
       <div className="p-[1rem]">
         <Link
           href={`/${locale}/proceso`}
+          onClick={handleClick}
           className={` hover:text-green-400  w-1/2 ${
             activeLink === "por definirse" ? "text-green-400" : ""
           }`}
@@ -81,13 +85,15 @@ export default function NavbarCustom({
       {/* Botones para cambio de idioma */}
       <div className="flex justify-center items-center ml-10 font-bold text-[#6C7F7D]">
         <Link href={buildNewUrl("en")}>
-          <button className="p-3">EN</button>
+          {/* <button className="p-3">EN</button> */}
+          <button className="p-3" onClick={handleClick}>EN</button>
         </Link>
 
         <span className="border-x h-[1rem] mr-2 border-gray-300"></span>
 
         <Link href={buildNewUrl("es")}>
-          <button>ES</button>
+        {/*   <button>ES</button> */}
+        <button onClick={handleClick}>ES</button>
         </Link>
       </div>
     </>

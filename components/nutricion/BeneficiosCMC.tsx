@@ -41,6 +41,15 @@ export default function BeneficiosCMC({
             alt="calorías"
           />
         );
+        case "energia":
+        return (
+          <Image
+            width={90}
+            height={100}
+            src="/img/nutricion-humana/icons/energy.png"
+            alt="calorías"
+          />
+        );
       case "azúcares":
         return (
           <Image

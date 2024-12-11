@@ -5,12 +5,12 @@ import { useTranslations } from "next-intl";
 export default function SeccionTwo() {
   const t = useTranslations();
   return (
-    <div className="w-full bg-[#6C7F7D]/20 my-6 py-8 md:space-y-0">
-      <p className="text-xl lg:text-xl p-5 md:mx-44 font-bold">
+    <div className="w-full bg-[#6C7F7D]/20 my-6 py-8 space-y-5 p-6">
+      <p className="text-xl lg:text-xl md:mx-44 font-bold">
         {t("success-stories")}
       </p>
-
-      <div className="lg:flex justify-center items-center w-full lg:p-5 gap-[5rem] space-y-5">
+      <div className="lg:flex justify-center space-y-5 md:space-y-0 lg:gap-5 px-5">
+        {/* lg:flex justify-center items-center w-full lg:p-5 gap-[5rem] space-y-5 */}
         <CardAplicacionesExitosas
           iconType="aguacate"
           name={t("avocado")}
@@ -50,7 +50,8 @@ export default function SeccionTwo() {
         />
       </div>
 
-      <div className="lg:flex justify-center items-center w-full lg:p-5 gap-[5rem] space-y-5">
+      <div className="lg:flex justify-center space-y-5 md:space-y-0 lg:gap-5 px-5">
+        {/*  lg:flex justify-center items-center w-full lg:p-5 gap-[5rem] space-y-5*/}
         <CardAplicacionesExitosas
           iconType="café"
           name={t("coffe")}
@@ -86,7 +87,8 @@ export default function SeccionTwo() {
         />
       </div>
 
-      <div className=" lg:flex justify-center items-center w-full lg:p-5 mt-6 md:mt-0 gap-[5rem] space-y-5">
+      <div className="lg:flex justify-center space-y-5 md:space-y-0 lg:gap-5 px-5">
+        {/* lg:flex justify-center items-center w-full lg:p-5 mt-6 md:mt-0 gap-[5rem] space-y-5 */}
         <CardAplicacionesExitosas
           iconType="Lechuga"
           name={t("lettuce")}
@@ -129,8 +131,8 @@ export default function SeccionTwo() {
           }
         />
       </div>
-
-      <div className="lg:flex justify-center items-center w-full lg:p-5 mt-6 md:mt-0 gap-[5rem] space-y-5">
+      <div className="lg:flex justify-center space-y-5 md:space-y-0 lg:gap-5 px-5">
+        {/* lg:flex justify-center items-center w-full lg:p-5 mt-6 md:mt-0 gap-[5rem] space-y-5 */}
         <CardAplicacionesExitosas
           iconType="Plátano/Banano"
           name={t("banana")}
